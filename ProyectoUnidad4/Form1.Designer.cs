@@ -53,18 +53,21 @@
             this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(31)))), ((int)(((byte)(162)))));
             this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(39)))), ((int)(((byte)(176)))));
             this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2CustomGradientPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(543, 757);
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(407, 615);
             this.guna2CustomGradientPanel1.TabIndex = 0;
+            this.guna2CustomGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2CustomGradientPanel1_Paint);
             // 
             // lblCreeAqui
             // 
             this.lblCreeAqui.AutoSize = true;
             this.lblCreeAqui.BackColor = System.Drawing.Color.Transparent;
             this.lblCreeAqui.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.lblCreeAqui.Location = new System.Drawing.Point(287, 598);
+            this.lblCreeAqui.Location = new System.Drawing.Point(215, 486);
+            this.lblCreeAqui.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCreeAqui.Name = "lblCreeAqui";
-            this.lblCreeAqui.Size = new System.Drawing.Size(142, 28);
+            this.lblCreeAqui.Size = new System.Drawing.Size(115, 21);
             this.lblCreeAqui.TabIndex = 5;
             this.lblCreeAqui.Text = "Cree una aqui";
             // 
@@ -73,9 +76,10 @@
             this.lblNoCuenta.AutoSize = true;
             this.lblNoCuenta.BackColor = System.Drawing.Color.Transparent;
             this.lblNoCuenta.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.lblNoCuenta.Location = new System.Drawing.Point(36, 598);
+            this.lblNoCuenta.Location = new System.Drawing.Point(27, 486);
+            this.lblNoCuenta.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNoCuenta.Name = "lblNoCuenta";
-            this.lblNoCuenta.Size = new System.Drawing.Size(223, 28);
+            this.lblNoCuenta.Size = new System.Drawing.Size(179, 21);
             this.lblNoCuenta.TabIndex = 4;
             this.lblNoCuenta.Text = "¿No tiene una cuenta?";
             // 
@@ -95,9 +99,10 @@
             this.btnInicarSesion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.btnInicarSesion.ForeColor = System.Drawing.Color.White;
             this.btnInicarSesion.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.btnInicarSesion.Location = new System.Drawing.Point(168, 479);
+            this.btnInicarSesion.Location = new System.Drawing.Point(126, 389);
+            this.btnInicarSesion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnInicarSesion.Name = "btnInicarSesion";
-            this.btnInicarSesion.Size = new System.Drawing.Size(217, 75);
+            this.btnInicarSesion.Size = new System.Drawing.Size(163, 61);
             this.btnInicarSesion.TabIndex = 3;
             this.btnInicarSesion.Text = "Iniciar Sesión";
             this.btnInicarSesion.UseTransparentBackground = true;
@@ -116,13 +121,13 @@
             this.txtContrasena.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtContrasena.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.txtContrasena.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtContrasena.Location = new System.Drawing.Point(152, 380);
-            this.txtContrasena.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.txtContrasena.Location = new System.Drawing.Point(114, 309);
+            this.txtContrasena.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txtContrasena.Name = "txtContrasena";
             this.txtContrasena.PasswordChar = '\0';
             this.txtContrasena.PlaceholderText = "";
             this.txtContrasena.SelectedText = "";
-            this.txtContrasena.Size = new System.Drawing.Size(245, 48);
+            this.txtContrasena.Size = new System.Drawing.Size(184, 39);
             this.txtContrasena.TabIndex = 2;
             // 
             // txtUsuario
@@ -138,13 +143,13 @@
             this.txtUsuario.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtUsuario.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.txtUsuario.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUsuario.Location = new System.Drawing.Point(152, 310);
-            this.txtUsuario.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.txtUsuario.Location = new System.Drawing.Point(114, 252);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.PasswordChar = '\0';
             this.txtUsuario.PlaceholderText = "";
             this.txtUsuario.SelectedText = "";
-            this.txtUsuario.Size = new System.Drawing.Size(245, 48);
+            this.txtUsuario.Size = new System.Drawing.Size(184, 39);
             this.txtUsuario.TabIndex = 1;
             // 
             // guna2PictureBox1
@@ -152,9 +157,10 @@
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox1.Image = global::ProyectoUnidad4.Properties.Resources.circulo_de_usuario__1_;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(152, 27);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(114, 22);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(245, 200);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(184, 162);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
@@ -162,10 +168,11 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(543, 757);
+            this.ClientSize = new System.Drawing.Size(407, 615);
             this.Controls.Add(this.guna2CustomGradientPanel1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.guna2CustomGradientPanel1.ResumeLayout(false);
