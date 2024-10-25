@@ -27,13 +27,13 @@ namespace ProyectoUnidad4
             this.Load += new EventHandler(Form1_Load);
 
             // Asignar el texto de placeholder inicialmente
-            guna2TextBox2.Text = password;
-            guna2TextBox2.ForeColor = Color.Gray; // Cambiar color del texto para diferenciar el placeholder
+            txtContrasena.Text = password;
+            txtContrasena.ForeColor = Color.Gray; // Cambiar color del texto para diferenciar el placeholder
             txtUsuario.Text = user;
             txtUsuario.ForeColor = Color.Gray;
             // Suscribir los eventos Enter y Leave del TextBox
-            guna2TextBox2.Enter += new EventHandler(txtContrasena_Enter);
-            guna2TextBox2.Leave += new EventHandler(txtContrasena_Leave);
+            txtContrasena.Enter += new EventHandler(txtContrasena_Enter);
+            txtContrasena.Leave += new EventHandler(txtContrasena_Leave);
             txtUsuario.Enter += new EventHandler(txtUsuario_Enter);
             txtUsuario.Leave += new EventHandler(txtUsuario_Leave);
         }
@@ -52,11 +52,11 @@ namespace ProyectoUnidad4
         }
         private void txtContrasena_Enter(object sender, EventArgs e)
         {
-            if (guna2TextBox2.Text == password)
+            if (txtContrasena.Text == password)
             {
-                guna2TextBox2.Text = ""; // Limpiar el texto
-                guna2TextBox2.ForeColor = Color.Black; // Cambiar el color del texto a negro
-                guna2TextBox2.PasswordChar = '*'; // Activar el modo de contraseña
+                txtContrasena.Text = ""; // Limpiar el texto
+                txtContrasena.ForeColor = Color.Black; // Cambiar el color del texto a negro
+                txtContrasena.PasswordChar = '*'; // Activar el modo de contraseña
             }
         }
         private void txtUsuario_Leave(object sender, EventArgs e)
@@ -69,12 +69,25 @@ namespace ProyectoUnidad4
         }
         private void txtContrasena_Leave(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(guna2TextBox2.Text))
+            if (string.IsNullOrWhiteSpace(txtContrasena.Text))
             {
-                guna2TextBox2.PasswordChar = '\0';
-                guna2TextBox2.Text = password; // Restaurar el placeholder
-                guna2TextBox2.ForeColor = Color.Gray; // Cambiar el color del texto a gris
+                txtContrasena.PasswordChar = '\0';
+                txtContrasena.Text = password; // Restaurar el placeholder
+                txtContrasena.ForeColor = Color.Gray; // Cambiar el color del texto a gris
 
+            }
+        }
+
+        private void btnInicarSesion_Click(object sender, EventArgs e)
+        {
+            string usuario = "asereje";
+            string contrasena = "123";
+            if (txtUsuario.Text == usuario && txtContrasena.Text == contrasena)
+            {
+                ComprasPrincipal p = new ComprasPrincipal();
+                this.Visible = false;
+                p.Show();
+                
             }
         }
     }

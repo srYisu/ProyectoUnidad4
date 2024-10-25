@@ -16,5 +16,10 @@ namespace ProyectoUnidad4
         {
             InitializeComponent();
         }
+
+        private void ComprasPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
