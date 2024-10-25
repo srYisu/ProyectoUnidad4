@@ -70,6 +70,12 @@
     <Compile Include="GestionDeProductos.Designer.cs">
       <DependentUpon>GestionDeProductos.cs</DependentUpon>
     </Compile>
+    <Compile Include="InicioAplicacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InicioAplicacion.Designer.cs">
+      <DependentUpon>InicioAplicacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ComprasPrincipal.resx">
@@ -80,6 +86,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GestionDeProductos.resx">
       <DependentUpon>GestionDeProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InicioAplicacion.resx">
+      <DependentUpon>InicioAplicacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -128,6 +137,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ÑemuFinal %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carrito-de-compras %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alt-administrador.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DiaMuertos %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flecha-del-carrito-hacia-abajo %285%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

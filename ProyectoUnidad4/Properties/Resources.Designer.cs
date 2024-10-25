@@ -63,9 +63,49 @@ namespace ProyectoUnidad4.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap alt_administrador {
+            get {
+                object obj = ResourceManager.GetObject("alt-administrador", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap carrito_de_compras__1_ {
+            get {
+                object obj = ResourceManager.GetObject("carrito-de-compras (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap circulo_de_usuario__1_ {
             get {
                 object obj = ResourceManager.GetObject("circulo-de-usuario (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DiaMuertos__3_ {
+            get {
+                object obj = ResourceManager.GetObject("DiaMuertos (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap flecha_del_carrito_hacia_abajo__5_ {
+            get {
+                object obj = ResourceManager.GetObject("flecha-del-carrito-hacia-abajo (5)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

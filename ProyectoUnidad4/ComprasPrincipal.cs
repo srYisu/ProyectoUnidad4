@@ -21,5 +21,10 @@ namespace ProyectoUnidad4
         {
 
         }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Asereje");
+        }
     }
 }
