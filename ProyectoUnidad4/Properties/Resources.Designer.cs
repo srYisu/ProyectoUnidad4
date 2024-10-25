@@ -83,6 +83,26 @@ namespace ProyectoUnidad4.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap carritoFlecha {
+            get {
+                object obj = ResourceManager.GetObject("carritoFlecha", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap carritoFlechaFondo {
+            get {
+                object obj = ResourceManager.GetObject("carritoFlechaFondo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap circulo_de_usuario__1_ {
             get {
                 object obj = ResourceManager.GetObject("circulo-de-usuario (1)", resourceCulture);
@@ -96,6 +116,16 @@ namespace ProyectoUnidad4.Properties {
         internal static System.Drawing.Bitmap DiaMuertos__3_ {
             get {
                 object obj = ResourceManager.GetObject("DiaMuertos (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DiaMuertos__4_ {
+            get {
+                object obj = ResourceManager.GetObject("DiaMuertos (4)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -29,23 +29,24 @@
         private void InitializeComponent()
         {
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.lblCreeAqui = new System.Windows.Forms.Label();
-            this.lblNoCuenta = new System.Windows.Forms.Label();
-            this.btnInicarSesion = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.tgsMostrarContraseña = new Guna.UI2.WinForms.Guna2ToggleSwitch();
+            this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.txtContrasena = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtUsuario = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnInicarSesion = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.lblCreeAqui = new System.Windows.Forms.Label();
+            this.lblNoCuenta = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2CustomGradientPanel1.SuspendLayout();
+            this.guna2CustomGradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2CustomGradientPanel1
             // 
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2CustomGradientPanel2);
             this.guna2CustomGradientPanel1.Controls.Add(this.lblCreeAqui);
             this.guna2CustomGradientPanel1.Controls.Add(this.lblNoCuenta);
-            this.guna2CustomGradientPanel1.Controls.Add(this.btnInicarSesion);
-            this.guna2CustomGradientPanel1.Controls.Add(this.txtContrasena);
-            this.guna2CustomGradientPanel1.Controls.Add(this.txtUsuario);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2PictureBox1);
             this.guna2CustomGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(31)))), ((int)(((byte)(162)))));
@@ -59,31 +60,31 @@
             this.guna2CustomGradientPanel1.TabIndex = 0;
             this.guna2CustomGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2CustomGradientPanel1_Paint);
             // 
-            // lblCreeAqui
+            // tgsMostrarContraseña
             // 
-            this.lblCreeAqui.AutoSize = true;
-            this.lblCreeAqui.BackColor = System.Drawing.Color.Transparent;
-            this.lblCreeAqui.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.lblCreeAqui.Location = new System.Drawing.Point(215, 486);
-            this.lblCreeAqui.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblCreeAqui.Name = "lblCreeAqui";
-            this.lblCreeAqui.Size = new System.Drawing.Size(115, 21);
-            this.lblCreeAqui.TabIndex = 5;
-            this.lblCreeAqui.Text = "Cree una aqui";
+            this.tgsMostrarContraseña.Animated = true;
+            this.tgsMostrarContraseña.AutoRoundedCorners = true;
+            this.tgsMostrarContraseña.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(39)))), ((int)(((byte)(176)))));
+            this.tgsMostrarContraseña.CheckedState.BorderRadius = 12;
+            this.tgsMostrarContraseña.CheckedState.BorderThickness = 1;
+            this.tgsMostrarContraseña.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(39)))), ((int)(((byte)(176)))));
+            this.tgsMostrarContraseña.CheckedState.InnerBorderColor = System.Drawing.Color.White;
+            this.tgsMostrarContraseña.CheckedState.InnerBorderRadius = 8;
+            this.tgsMostrarContraseña.CheckedState.InnerBorderThickness = 1;
+            this.tgsMostrarContraseña.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.tgsMostrarContraseña.Location = new System.Drawing.Point(218, 186);
+            this.tgsMostrarContraseña.Name = "tgsMostrarContraseña";
+            this.tgsMostrarContraseña.Size = new System.Drawing.Size(58, 27);
+            this.tgsMostrarContraseña.TabIndex = 7;
+            this.tgsMostrarContraseña.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(190)))), ((int)(((byte)(231)))));
+            this.tgsMostrarContraseña.UncheckedState.BorderRadius = 12;
+            this.tgsMostrarContraseña.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(190)))), ((int)(((byte)(231)))));
+            this.tgsMostrarContraseña.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
+            this.tgsMostrarContraseña.UncheckedState.InnerBorderRadius = 8;
+            this.tgsMostrarContraseña.UncheckedState.InnerColor = System.Drawing.Color.White;
+            this.tgsMostrarContraseña.CheckedChanged += new System.EventHandler(this.tgsMostrarContraseña_CheckedChanged);
             // 
-            // lblNoCuenta
-            // 
-            this.lblNoCuenta.AutoSize = true;
-            this.lblNoCuenta.BackColor = System.Drawing.Color.Transparent;
-            this.lblNoCuenta.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.lblNoCuenta.Location = new System.Drawing.Point(27, 486);
-            this.lblNoCuenta.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblNoCuenta.Name = "lblNoCuenta";
-            this.lblNoCuenta.Size = new System.Drawing.Size(179, 21);
-            this.lblNoCuenta.TabIndex = 4;
-            this.lblNoCuenta.Text = "¿No tiene una cuenta?";
-            // 
-            // btnInicarSesion
+            // guna2CustomGradientPanel2
             // 
             this.btnInicarSesion.BackColor = System.Drawing.Color.Transparent;
             this.btnInicarSesion.BorderColor = System.Drawing.Color.White;
@@ -111,13 +112,16 @@
             // txtContrasena
             // 
             this.txtContrasena.BackColor = System.Drawing.Color.Transparent;
+            this.txtContrasena.BorderColor = System.Drawing.Color.Black;
             this.txtContrasena.BorderRadius = 20;
+            this.txtContrasena.BorderThickness = 2;
             this.txtContrasena.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtContrasena.DefaultText = "";
             this.txtContrasena.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtContrasena.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtContrasena.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtContrasena.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtContrasena.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(39)))), ((int)(((byte)(176)))));
             this.txtContrasena.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtContrasena.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.txtContrasena.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -133,13 +137,16 @@
             // txtUsuario
             // 
             this.txtUsuario.BackColor = System.Drawing.Color.Transparent;
+            this.txtUsuario.BorderColor = System.Drawing.Color.Black;
             this.txtUsuario.BorderRadius = 20;
+            this.txtUsuario.BorderThickness = 2;
             this.txtUsuario.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtUsuario.DefaultText = "";
             this.txtUsuario.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtUsuario.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtUsuario.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtUsuario.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUsuario.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(39)))), ((int)(((byte)(176)))));
             this.txtUsuario.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtUsuario.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.txtUsuario.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -151,6 +158,51 @@
             this.txtUsuario.SelectedText = "";
             this.txtUsuario.Size = new System.Drawing.Size(184, 39);
             this.txtUsuario.TabIndex = 1;
+            // 
+            // btnInicarSesion
+            // 
+            this.btnInicarSesion.BackColor = System.Drawing.Color.Transparent;
+            this.btnInicarSesion.BorderRadius = 25;
+            this.btnInicarSesion.BorderThickness = 2;
+            this.btnInicarSesion.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnInicarSesion.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnInicarSesion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnInicarSesion.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnInicarSesion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnInicarSesion.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(39)))), ((int)(((byte)(176)))));
+            this.btnInicarSesion.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(31)))), ((int)(((byte)(162)))));
+            this.btnInicarSesion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnInicarSesion.ForeColor = System.Drawing.Color.White;
+            this.btnInicarSesion.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.btnInicarSesion.Location = new System.Drawing.Point(59, 244);
+            this.btnInicarSesion.Name = "btnInicarSesion";
+            this.btnInicarSesion.Size = new System.Drawing.Size(217, 75);
+            this.btnInicarSesion.TabIndex = 3;
+            this.btnInicarSesion.Text = "Iniciar Sesión";
+            this.btnInicarSesion.UseTransparentBackground = true;
+            this.btnInicarSesion.Click += new System.EventHandler(this.btnInicarSesion_Click);
+            // 
+            // lblCreeAqui
+            // 
+            this.lblCreeAqui.AutoSize = true;
+            this.lblCreeAqui.BackColor = System.Drawing.Color.Transparent;
+            this.lblCreeAqui.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.lblCreeAqui.Location = new System.Drawing.Point(284, 634);
+            this.lblCreeAqui.Name = "lblCreeAqui";
+            this.lblCreeAqui.Size = new System.Drawing.Size(142, 28);
+            this.lblCreeAqui.TabIndex = 5;
+            this.lblCreeAqui.Text = "Cree una aqui";
+            // 
+            // lblNoCuenta
+            // 
+            this.lblNoCuenta.AutoSize = true;
+            this.lblNoCuenta.BackColor = System.Drawing.Color.Transparent;
+            this.lblNoCuenta.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.lblNoCuenta.Location = new System.Drawing.Point(33, 634);
+            this.lblNoCuenta.Name = "lblNoCuenta";
+            this.lblNoCuenta.Size = new System.Drawing.Size(223, 28);
+            this.lblNoCuenta.TabIndex = 4;
+            this.lblNoCuenta.Text = "¿No tiene una cuenta?";
             // 
             // guna2PictureBox1
             // 
@@ -174,9 +226,11 @@
             this.Controls.Add(this.guna2CustomGradientPanel1);
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.guna2CustomGradientPanel1.ResumeLayout(false);
             this.guna2CustomGradientPanel1.PerformLayout();
+            this.guna2CustomGradientPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -191,6 +245,8 @@
         private Guna.UI2.WinForms.Guna2TextBox txtUsuario;
         private System.Windows.Forms.Label lblCreeAqui;
         private System.Windows.Forms.Label lblNoCuenta;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel2;
+        private Guna.UI2.WinForms.Guna2ToggleSwitch tgsMostrarContraseña;
     }
 }
 

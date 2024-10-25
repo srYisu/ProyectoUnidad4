@@ -64,6 +64,8 @@
             this.picProducto1 = new System.Windows.Forms.PictureBox();
             this.pnlColorMoradoClaro = new Guna.UI2.WinForms.Guna2Panel();
             this.picDIaDeMuertos = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.pnlMoradoOcuroArriba.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBtnCarrito)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBtnUsuario)).BeginInit();
@@ -100,7 +102,7 @@
             // 
             this.picBtnCarrito.BackColor = System.Drawing.Color.Transparent;
             this.picBtnCarrito.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picBtnCarrito.Image = global::ProyectoUnidad4.Properties.Resources.carrito_de_compras__1_;
+            this.picBtnCarrito.Image = global::ProyectoUnidad4.Properties.Resources.carritoFlecha;
             this.picBtnCarrito.ImageRotate = 0F;
             this.picBtnCarrito.Location = new System.Drawing.Point(1266, 10);
             this.picBtnCarrito.Name = "picBtnCarrito";
@@ -114,7 +116,7 @@
             // 
             this.picBtnUsuario.BackColor = System.Drawing.Color.Transparent;
             this.picBtnUsuario.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picBtnUsuario.Image = global::ProyectoUnidad4.Properties.Resources.alt_administrador;
+            this.picBtnUsuario.Image = global::ProyectoUnidad4.Properties.Resources.DiaMuertos__4_;
             this.picBtnUsuario.ImageRotate = 0F;
             this.picBtnUsuario.Location = new System.Drawing.Point(1128, 10);
             this.picBtnUsuario.Name = "picBtnUsuario";
@@ -175,6 +177,8 @@
             // 
             // pnlFondoGeneral
             // 
+            this.pnlFondoGeneral.Controls.Add(this.guna2Button2);
+            this.pnlFondoGeneral.Controls.Add(this.guna2Button1);
             this.pnlFondoGeneral.Controls.Add(this.scbFormPrincipal);
             this.pnlFondoGeneral.Controls.Add(this.guna2PictureBox1);
             this.pnlFondoGeneral.Controls.Add(this.picBtnAgregarAlCarrito4);
@@ -225,14 +229,14 @@
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(784, 348);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(567, 704);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(567, 595);
             this.guna2PictureBox1.TabIndex = 32;
             this.guna2PictureBox1.TabStop = false;
             // 
             // picBtnAgregarAlCarrito4
             // 
             this.picBtnAgregarAlCarrito4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picBtnAgregarAlCarrito4.Image = global::ProyectoUnidad4.Properties.Resources.flecha_del_carrito_hacia_abajo__5_;
+            this.picBtnAgregarAlCarrito4.Image = global::ProyectoUnidad4.Properties.Resources.carritoFlechaFondo;
             this.picBtnAgregarAlCarrito4.ImageRotate = 0F;
             this.picBtnAgregarAlCarrito4.Location = new System.Drawing.Point(661, 794);
             this.picBtnAgregarAlCarrito4.Name = "picBtnAgregarAlCarrito4";
@@ -295,7 +299,7 @@
             // picBtnAgregarAlCarrito2
             // 
             this.picBtnAgregarAlCarrito2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picBtnAgregarAlCarrito2.Image = global::ProyectoUnidad4.Properties.Resources.flecha_del_carrito_hacia_abajo__5_;
+            this.picBtnAgregarAlCarrito2.Image = global::ProyectoUnidad4.Properties.Resources.carritoFlechaFondo;
             this.picBtnAgregarAlCarrito2.ImageRotate = 0F;
             this.picBtnAgregarAlCarrito2.Location = new System.Drawing.Point(661, 459);
             this.picBtnAgregarAlCarrito2.Name = "picBtnAgregarAlCarrito2";
@@ -358,7 +362,7 @@
             // picBtnAgreagarAlCarrito3
             // 
             this.picBtnAgreagarAlCarrito3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picBtnAgreagarAlCarrito3.Image = global::ProyectoUnidad4.Properties.Resources.flecha_del_carrito_hacia_abajo__5_;
+            this.picBtnAgreagarAlCarrito3.Image = global::ProyectoUnidad4.Properties.Resources.carritoFlechaFondo;
             this.picBtnAgreagarAlCarrito3.ImageRotate = 0F;
             this.picBtnAgreagarAlCarrito3.Location = new System.Drawing.Point(237, 794);
             this.picBtnAgreagarAlCarrito3.Name = "picBtnAgreagarAlCarrito3";
@@ -421,7 +425,7 @@
             // picBtnAgregarAlCarrito1
             // 
             this.picBtnAgregarAlCarrito1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picBtnAgregarAlCarrito1.Image = global::ProyectoUnidad4.Properties.Resources.flecha_del_carrito_hacia_abajo__5_;
+            this.picBtnAgregarAlCarrito1.Image = global::ProyectoUnidad4.Properties.Resources.carritoFlechaFondo;
             this.picBtnAgregarAlCarrito1.ImageRotate = 0F;
             this.picBtnAgregarAlCarrito1.Location = new System.Drawing.Point(237, 459);
             this.picBtnAgregarAlCarrito1.Name = "picBtnAgregarAlCarrito1";
@@ -485,7 +489,7 @@
             // 
             this.pnlColorMoradoClaro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(55)))), ((int)(((byte)(166)))));
             this.pnlColorMoradoClaro.Controls.Add(this.picDIaDeMuertos);
-            this.pnlColorMoradoClaro.Location = new System.Drawing.Point(0, 92);
+            this.pnlColorMoradoClaro.Location = new System.Drawing.Point(0, 88);
             this.pnlColorMoradoClaro.Name = "pnlColorMoradoClaro";
             this.pnlColorMoradoClaro.Size = new System.Drawing.Size(1550, 229);
             this.pnlColorMoradoClaro.TabIndex = 2;
@@ -500,6 +504,34 @@
             this.picDIaDeMuertos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picDIaDeMuertos.TabIndex = 0;
             this.picDIaDeMuertos.TabStop = false;
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.Location = new System.Drawing.Point(237, 989);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(180, 45);
+            this.guna2Button1.TabIndex = 34;
+            this.guna2Button1.Text = "guna2Button1";
+            // 
+            // guna2Button2
+            // 
+            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button2.ForeColor = System.Drawing.Color.White;
+            this.guna2Button2.Location = new System.Drawing.Point(486, 989);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.Size = new System.Drawing.Size(180, 45);
+            this.guna2Button2.TabIndex = 35;
+            this.guna2Button2.Text = "guna2Button2";
             // 
             // ComprasPrincipal
             // 
@@ -570,5 +602,7 @@
         private System.Windows.Forms.PictureBox picProducto3;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2VScrollBar scbFormPrincipal;
+        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }
