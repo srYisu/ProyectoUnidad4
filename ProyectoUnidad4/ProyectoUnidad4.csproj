@@ -105,9 +105,29 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Ñamason.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\circulo-de-usuario %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ñamason %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ñamason %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ñemu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ÑemuFinal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ÑemuFinal %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ÑemuFinal %282%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
