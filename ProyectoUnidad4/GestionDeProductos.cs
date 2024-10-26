@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace ProyectoUnidad4
 {
@@ -27,7 +28,16 @@ namespace ProyectoUnidad4
 
         private void GestionDeProductos_Load(object sender, EventArgs e)
         {
+            //Agregar opciones a combobox
+            cmbCategoria.Items.Add("Alimentario");
+            cmbCategoria.Items.Add("Electrónico");
+            cmbCategoria.Items.Add("Ropa");
 
+            //agregar columnas a dgvProductos
+            dgvProductos.Columns.Add("Nombre","Nombre");
+            dgvProductos.Columns.Add("Precio", "Precio");
+            dgvProductos.Columns.Add("Cantidad", "Cantidad");
+            dgvProductos.Columns.Add("Categoría", "Categoría");
         }
 
         private void btnSalir_Click(object sender, EventArgs e)

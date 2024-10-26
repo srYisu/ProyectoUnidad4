@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProyectoUnidad4
 {
-    internal abstract class ProductoElectronico : Producto
+    public abstract class ProductoElectronico : Producto
     {
         //lista de electronicos
     }
