@@ -16,5 +16,24 @@ namespace ProyectoUnidad4
         {
             InitializeComponent();
         }
+
+        private void btnGestionDeProductos_Click(object sender, EventArgs e)
+        {
+            GestionDeProductos gestionDeProductos = new GestionDeProductos();
+            gestionDeProductos.Show();
+            this.Close();
+        }
+
+        private void btnGestionDeClientes_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnReportes_Click(object sender, EventArgs e)
+        {
+            Reportes reportes = new Reportes();
+            reportes.Show();
+            this.Close();
+        }
     }
 }

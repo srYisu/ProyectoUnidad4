@@ -298,6 +298,7 @@
             this.Controls.Add(this.lblGestionDeProductos);
             this.Name = "GestionDeProductos";
             this.Text = "GestionDeProductos";
+            this.Load += new System.EventHandler(this.GestionDeProductos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
