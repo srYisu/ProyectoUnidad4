@@ -91,7 +91,6 @@ namespace ProyectoUnidad4
                 Dashboard dashboard = new Dashboard();
                 this.Visible = false;
                 dashboard.Show();
-
             }
         }
 
