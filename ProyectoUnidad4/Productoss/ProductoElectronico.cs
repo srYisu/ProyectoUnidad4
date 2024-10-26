@@ -6,8 +6,19 @@ using System.Threading.Tasks;
 
 namespace ProyectoUnidad4
 {
-    public abstract class ProductoElectronico : Producto
+    public class ProductoElectronico : Producto
     {
-        //lista de electronicos
+        public ProductoElectronico(string nombre, string categoria, double precio, int cantidad, string imagen) : base(nombre, categoria, precio, cantidad, imagen)
+        {
+            Nombre = nombre; Categoria = categoria; Precio = precio; CantidadEnInventario = cantidad; RutaImagen = imagen;
+        }
+        public override void AplicarDescuento()
+        {
+            throw new NotImplementedException();
+        }
+        public override void CalcularPrecioConImpuesto()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

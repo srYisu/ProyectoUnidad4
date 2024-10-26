@@ -6,8 +6,21 @@ using System.Threading.Tasks;
 
 namespace ProyectoUnidad4
 {
-    public abstract class ProductoRopa : Producto
+    public class ProductoRopa : Producto
     {
-        //lista de ropa
+
+        public ProductoRopa(string nombre, string categoria, double precio,  int cantidad, string imagen) : base(nombre, categoria, precio, cantidad ,imagen)
+        {
+            Nombre = nombre; Categoria = categoria; Precio = precio; CantidadEnInventario = cantidad; RutaImagen = imagen;
+        }
+        public override void AplicarDescuento()
+        {
+            throw new NotImplementedException();
+        }
+        public override void CalcularPrecioConImpuesto()
+        {
+            throw new NotImplementedException();
+        }
+
     }
 }
