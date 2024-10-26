@@ -60,7 +60,7 @@ namespace ProyectoUnidad4
             {
                 txtContrasenaReal.Text = ""; // Limpiar el texto
                 txtContrasenaReal.ForeColor = Color.White; // Cambiar el color del texto a negro
-                txtContrasenaReal.PasswordChar = '*'; // Activar el modo de contraseña
+                txtContrasenaReal.PasswordChar = '•'; // Activar el modo de contraseña
             }
         }
         private void txtUsuario_Leave(object sender, EventArgs e)
@@ -105,7 +105,7 @@ namespace ProyectoUnidad4
             else
             {
                 // Si el CheckBox no está marcado, ocultar la contraseña
-                txtContrasenaReal.PasswordChar = '*'; // Ocultar la contraseña con asteriscos
+                txtContrasenaReal.PasswordChar = '•'; // Ocultar la contraseña con asteriscos
             }
         }
 
