@@ -8,5 +8,6 @@ namespace ProyectoUnidad4
 {
     internal abstract class ProductoAlimentario : Producto
     {
+        //lista de alimetos
     }
 }

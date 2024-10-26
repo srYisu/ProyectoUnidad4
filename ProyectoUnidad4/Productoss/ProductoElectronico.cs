@@ -8,5 +8,6 @@ namespace ProyectoUnidad4
 {
     internal abstract class ProductoElectronico : Producto
     {
+        //lista de electronicos
     }
 }

@@ -143,6 +143,16 @@ namespace ProyectoUnidad4.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap lupaBuscar {
+            get {
+                object obj = ResourceManager.GetObject("lupaBuscar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Ñamason {
             get {
                 object obj = ResourceManager.GetObject("Ñamason", resourceCulture);
@@ -206,6 +216,16 @@ namespace ProyectoUnidad4.Properties {
         internal static System.Drawing.Bitmap ÑemuFinal__2_ {
             get {
                 object obj = ResourceManager.GetObject("ÑemuFinal (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap usuarioInicio__1_ {
+            get {
+                object obj = ResourceManager.GetObject("usuarioInicio (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

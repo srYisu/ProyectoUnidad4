@@ -8,6 +8,7 @@ namespace ProyectoUnidad4
 {
     internal abstract class Producto
     {
+        //lista que contiene productos
         public string Nombre { get; set; }
         public double Precio { get; set; }
         public int CantidadEnInventario { get; set; }
