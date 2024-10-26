@@ -88,9 +88,9 @@ namespace ProyectoUnidad4
             string contrasena = "123";
             if (txtUsuarioReal.Text == usuario && txtContrasenaReal.Text == contrasena)
             {
-                ComprasPrincipal p = new ComprasPrincipal();
+                Dashboard dashboard = new Dashboard();
                 this.Visible = false;
-                p.Show();
+                dashboard.Show();
 
             }
         }
@@ -114,6 +114,9 @@ namespace ProyectoUnidad4
 
         }
 
+        private void btnInciarSesionReal_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }

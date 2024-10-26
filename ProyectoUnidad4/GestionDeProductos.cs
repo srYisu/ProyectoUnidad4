@@ -29,5 +29,12 @@ namespace ProyectoUnidad4
         {
 
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Dashboard dashboard = new Dashboard();
+            dashboard.Show();
+            this.Close();
+        }
     }
 }
