@@ -27,15 +27,19 @@ namespace ProyectoUnidad4
             this.Load += new EventHandler(Form1_Load);
 
             // Asignar el texto de placeholder inicialmente
-            txtContrasena.Text = password;
-            txtContrasena.ForeColor = Color.WhiteSmoke; // Cambiar color del texto para diferenciar el placeholder
-            txtUsuario.Text = user;
-            txtUsuario.ForeColor = Color.WhiteSmoke;
+            txtContrasenaReal.Text = password;
+            txtContrasenaReal.ForeColor = Color.WhiteSmoke; // Cambiar color del texto para diferenciar el placeholder
+            txtUsuarioReal.Text = user;
+            txtUsuarioReal.ForeColor = Color.WhiteSmoke;
             // Suscribir los eventos Enter y Leave del TextBox
-            txtContrasena.Enter += new EventHandler(txtContrasena_Enter);
-            txtContrasena.Leave += new EventHandler(txtContrasena_Leave);
-            txtUsuario.Enter += new EventHandler(txtUsuario_Enter);
-            txtUsuario.Leave += new EventHandler(txtUsuario_Leave);
+            txtContrasenaReal.Enter += new EventHandler(txtContrasena_Enter);
+            txtContrasenaReal.Leave += new EventHandler(txtContrasena_Leave);
+            txtUsuarioReal.Enter += new EventHandler(txtUsuario_Enter);
+            txtUsuarioReal.Leave += new EventHandler(txtUsuario_Leave);
+
+            btnInciarSesionReal.Click += new EventHandler(btnInicarSesion_Click);
+
+            tgsMostrarContraseña1.CheckedChanged += new EventHandler(tgsMostrarContraseña_CheckedChanged);
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -44,36 +48,36 @@ namespace ProyectoUnidad4
 
         private void txtUsuario_Enter(object sender, EventArgs e)
         {
-            if (txtUsuario.Text == user)
+            if (txtUsuarioReal.Text == user)
             {
-                txtUsuario.Text = ""; // Limpiar el texto
-                txtUsuario.ForeColor = Color.White; // Cambiar el color del texto a negro
+                txtUsuarioReal.Text = ""; // Limpiar el texto
+                txtUsuarioReal.ForeColor = Color.White; // Cambiar el color del texto a negro
             }
         }
         private void txtContrasena_Enter(object sender, EventArgs e)
         {
-            if (txtContrasena.Text == password)
+            if (txtContrasenaReal.Text == password)
             {
-                txtContrasena.Text = ""; // Limpiar el texto
-                txtContrasena.ForeColor = Color.White; // Cambiar el color del texto a negro
-                txtContrasena.PasswordChar = '*'; // Activar el modo de contraseña
+                txtContrasenaReal.Text = ""; // Limpiar el texto
+                txtContrasenaReal.ForeColor = Color.White; // Cambiar el color del texto a negro
+                txtContrasenaReal.PasswordChar = '*'; // Activar el modo de contraseña
             }
         }
         private void txtUsuario_Leave(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtUsuario.Text))
+            if (string.IsNullOrWhiteSpace(txtUsuarioReal.Text))
             {
-                txtUsuario.Text = user; // Restaurar el placeholder
-                txtUsuario.ForeColor = Color.WhiteSmoke; // Cambiar el color del texto a gris
+                txtUsuarioReal.Text = user; // Restaurar el placeholder
+                txtUsuarioReal.ForeColor = Color.WhiteSmoke; // Cambiar el color del texto a gris
             }
         }
         private void txtContrasena_Leave(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtContrasena.Text))
+            if (string.IsNullOrWhiteSpace(txtContrasenaReal.Text))
             {
-                txtContrasena.PasswordChar = '\0';
-                txtContrasena.Text = password; // Restaurar el placeholder
-                txtContrasena.ForeColor = Color.WhiteSmoke; // Cambiar el color del texto a gris
+                txtContrasenaReal.PasswordChar = '\0';
+                txtContrasenaReal.Text = password; // Restaurar el placeholder
+                txtContrasenaReal.ForeColor = Color.WhiteSmoke; // Cambiar el color del texto a gris
 
             }
         }
@@ -82,26 +86,26 @@ namespace ProyectoUnidad4
         {
             string usuario = "asereje";
             string contrasena = "123";
-            if (txtUsuario.Text == usuario && txtContrasena.Text == contrasena)
+            if (txtUsuarioReal.Text == usuario && txtContrasenaReal.Text == contrasena)
             {
                 ComprasPrincipal p = new ComprasPrincipal();
                 this.Visible = false;
                 p.Show();
-                
+
             }
         }
 
         private void tgsMostrarContraseña_CheckedChanged(object sender, EventArgs e)
         {
-            if (tgsMostrarContraseña.Checked)
+            if (tgsMostrarContraseña1.Checked)
             {
                 // Si el CheckBox está marcado, mostrar la contraseña
-                txtContrasena.PasswordChar = '\0'; // Mostrar el texto sin ocultarlo
+                txtContrasenaReal.PasswordChar = '\0'; // Mostrar el texto sin ocultarlo
             }
             else
             {
                 // Si el CheckBox no está marcado, ocultar la contraseña
-                txtContrasena.PasswordChar = '*'; // Ocultar la contraseña con asteriscos
+                txtContrasenaReal.PasswordChar = '*'; // Ocultar la contraseña con asteriscos
             }
         }
 
@@ -109,5 +113,7 @@ namespace ProyectoUnidad4
         {
 
         }
+
+
     }
 }
