@@ -15,20 +15,80 @@ namespace ProyectoUnidad4
         public Proceder_al_pago()
         {
             InitializeComponent();
-        }
 
+            // Asignar eventos CheckedChanged a los RadioButtons
+            rdbTarjetaDeCredito.CheckedChanged += new EventHandler(RadioButton_CheckedChanged);
+            rdbEfectivo.CheckedChanged += new EventHandler(RadioButton_CheckedChanged);
+            rdbPaypal.CheckedChanged += new EventHandler(RadioButton_CheckedChanged);
+        }
+        string destino = CarritoDeCompras.entrega;
+        double total = CarritoDeCompras.totalProductos;
         private void pnlPagoEnLinea_Paint(object sender, PaintEventArgs e)
         {
 
         }
         string pais, nombreCompleto, estado, municipio, dirección;
         int telefono, postal;
-        double total;
-
+        private void RadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            mostrarPanel();
+        }
+        private void mostrarPanel()
+        {
+            pnlPagoEnLinea.Visible = rdbTarjetaDeCredito.Checked;
+            pnlPagoEnEfectivo.Visible = rdbEfectivo.Checked;
+            pnlPaypal.Visible = rdbPaypal.Checked;
+        }
+        PagoTarjetaCredito tarjetaCredito = new PagoTarjetaCredito();
+        PagoEfectivon efectivo = new PagoEfectivon();
+        PagoPaypal paypal = new PagoPaypal();
         private void btnRealizarPedido_Click(object sender, EventArgs e)
         {
-            PagoTarjetaCredito tarjetaCredito = new PagoTarjetaCredito();
-            tarjetaCredito.ProcesarPago("pais", "nombre", 10, 20, "estado", "municipo", "direccion", 200, "en la casa");
+            pais = txtPaisDestino.Text; nombreCompleto = txtNombreCompleto.Text; estado = txtEstado.Text;
+            municipio = txtMunicipio.Text; dirección = txtDireccion.Text;
+
+            telefono = Convert.ToInt32(txtNumeroTelefono.Text); postal = Convert.ToInt32(txtCodigoPostal.Text); 
+
+            if (rdbTarjetaDeCredito.Checked)
+            {
+                if (string.IsNullOrWhiteSpace(txtPaisDestino.Text) || string.IsNullOrWhiteSpace(txtNombreCompleto.Text) ||
+                    string.IsNullOrWhiteSpace(txtNumeroTelefono.Text) || string.IsNullOrWhiteSpace(txtCodigoPostal.Text) ||
+                    string.IsNullOrWhiteSpace(txtEstado.Text) || string.IsNullOrWhiteSpace(txtMunicipio.Text) ||
+                    string.IsNullOrWhiteSpace(txtDireccion.Text) || string.IsNullOrWhiteSpace(txtNumeroTarjeta.Text) ||
+                    string.IsNullOrWhiteSpace(txtFechaDeVencimiento.Text) || string.IsNullOrWhiteSpace(txtCVV.Text))
+                {
+                    MessageBox.Show("Rellene todos los datos por favor");
+                    
+                }
+                tarjetaCredito.ProcesarPago(pais, nombreCompleto, telefono, postal, estado, municipio, dirección, total, destino);
+            }
+            if (rdbEfectivo.Checked)
+            {
+                if (string.IsNullOrWhiteSpace(txtPaisDestino.Text) || string.IsNullOrWhiteSpace(txtNombreCompleto.Text) ||
+                    string.IsNullOrWhiteSpace(txtNumeroTelefono.Text) || string.IsNullOrWhiteSpace(txtCodigoPostal.Text) ||
+                    string.IsNullOrWhiteSpace(txtEstado.Text) || string.IsNullOrWhiteSpace(txtMunicipio.Text) || 
+                    string.IsNullOrWhiteSpace(txtDireccion.Text))
+                {
+                    MessageBox.Show("Rellene todos los datos por favor");
+                    
+                }
+                efectivo.ProcesarPago(pais, nombreCompleto, telefono, postal, estado, municipio, dirección, total, destino);
+
+            }
+            if (rdbPaypal.Checked)
+            {
+                if (string.IsNullOrWhiteSpace(txtPaisDestino.Text) || string.IsNullOrWhiteSpace(txtNombreCompleto.Text) ||
+                    string.IsNullOrWhiteSpace(txtNumeroTelefono.Text) || string.IsNullOrWhiteSpace(txtCodigoPostal.Text) ||
+                    string.IsNullOrWhiteSpace(txtEstado.Text) || string.IsNullOrWhiteSpace(txtMunicipio.Text) || 
+                    string.IsNullOrWhiteSpace(txtDireccion.Text) || string.IsNullOrWhiteSpace(txtCorreoElectronico.Text) ||
+                    string.IsNullOrWhiteSpace(txtContrasena.Text))
+                {
+                    MessageBox.Show("Rellene todos los datos por favor");
+                    
+                }
+                paypal.ProcesarPago(pais, nombreCompleto, telefono, postal, estado, municipio, dirección, total, destino);
+
+            }
         }
     }
 }

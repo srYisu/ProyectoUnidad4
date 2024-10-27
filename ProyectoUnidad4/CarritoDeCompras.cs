@@ -20,7 +20,8 @@ namespace ProyectoUnidad4
             CalcularTotal();
             dgvCarritoDeCompras.RowHeadersVisible = false; // Eliminar primera columna vacía
         }
-
+        public static string entrega;
+        public static double totalProductos;
         private void ConfigurarTabla()
         {
             //agregar imagen a la columna
@@ -84,13 +85,34 @@ namespace ProyectoUnidad4
                 total += (precio.Precio * precio.CantidadEnInventario);
             }
             lblTotalDeCostos.Text = total.ToString();
+            totalProductos = total;
         }
         private void btnRealizarPedido_Click(object sender, EventArgs e)
         {
-            Proceder_al_pago pago = new Proceder_al_pago();
-            pago.Show();
-        }
+            if (rdbOnline.Checked)
+            {
+                entrega = "Entrega a domicilio";
+                Proceder_al_pago pago = new Proceder_al_pago();
+                pago.FormClosed += Form2_FormClosed;
+                pago.Show();
+                
 
+            }
+            else if (rdbTienda.Checked)
+            {
+                entrega = "Entrega a tienda";
+                Proceder_al_pago pago = new Proceder_al_pago();
+                pago.FormClosed += Form2_FormClosed;
+                pago.Show();
+
+            }
+            else { MessageBox.Show("Seleccione un metodo de enterga"); }
+            
+        }
+        private void Form2_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            CargarProductosCarrito();
+        }
         private void CarritoDeCompras_Load(object sender, EventArgs e)
         {
             

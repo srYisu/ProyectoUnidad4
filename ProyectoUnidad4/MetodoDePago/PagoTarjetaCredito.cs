@@ -16,7 +16,7 @@ namespace ProyectoUnidad4
         public static bool borrar { get; set; }
         private string myEmai = "chetosflaminconsalsa@gmail.com";
         private string myPassword = "owjq nndv qkil xyic";
-        private string myAlias = "Jisus Asereje";
+        private string myAlias = "ÑemuCorp";
         private string[] myAdjuntops;
         private MailMessage mCorreo;
         public void ProcesarPago(string pais, string nombre, int telefono, int postal, string estado, string municipo, string direccion,double total, string entrega )
@@ -26,9 +26,9 @@ namespace ProyectoUnidad4
             mCorreo.From = new MailAddress(myEmai, myAlias, System.Text.Encoding.UTF8);
             mCorreo.To.Add("sr.elyisus@gmail.com".Trim());
             mCorreo.Subject = "Pago procesado".Trim();
-            mCorreo.Body = $"Su pedido de ${total} ha sido procesado exitosamente. \nPago realizado con tardeja de credito." +
-                $"\nPara destino en {entrega}. ".Trim();
             mCorreo.IsBodyHtml = true;
+            mCorreo.Body = $"Su pedido de ${total} ha sido procesado exitosamente.<br/>Metodo de pago: Tarjeta de credito <br/> <br/>Datos personales <br/>Nombre: {nombre}." +
+                $"Telefono: {telefono} <br/>{pais} {estado} {municipo} <br/>{direccion} <br/>Para destino en {entrega}. ".Trim();
             mCorreo.Priority = MailPriority.High;
 
             try

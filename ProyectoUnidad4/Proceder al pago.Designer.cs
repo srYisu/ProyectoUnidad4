@@ -33,15 +33,13 @@
             this.lblEstado = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblNombreCompleto = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblCodigoPostal = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txtNombreCompleto = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtPaisDestino = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblMunicipio = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblNumeroTelefono = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txtNombre = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtDistrito = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtNombreCompleto = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblPais = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtNumeroTelefono = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtMunicipio = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lblDistrito = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtCodigoPostal = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtEstado = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblDireccion = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -51,6 +49,7 @@
             this.txtCorreoElectronico = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblCorreoElectronico = new System.Windows.Forms.Label();
             this.pnlPagoEnLinea = new Guna.UI2.WinForms.Guna2Panel();
+            this.rdbEfectivo = new Guna.UI2.WinForms.Guna2RadioButton();
             this.lblMetodoDePagoEnLinea = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.rdbPaypal = new Guna.UI2.WinForms.Guna2RadioButton();
             this.rdbTarjetaDeCredito = new Guna.UI2.WinForms.Guna2RadioButton();
@@ -65,8 +64,9 @@
             this.lblFechaDeVencimiento = new System.Windows.Forms.Label();
             this.lblNumeroDeTarjeta = new System.Windows.Forms.Label();
             this.txtNumeroTarjeta = new Guna.UI2.WinForms.Guna2TextBox();
-            this.rdbEfectivo = new Guna.UI2.WinForms.Guna2RadioButton();
             this.btnRealizarPedido = new Guna.UI2.WinForms.Guna2Button();
+            this.lblTotalNombre = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblTotal = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel1.SuspendLayout();
             this.pnlPaypal.SuspendLayout();
             this.pnlPagoEnLinea.SuspendLayout();
@@ -80,19 +80,17 @@
             this.guna2Panel1.Controls.Add(this.lblEstado);
             this.guna2Panel1.Controls.Add(this.lblNombreCompleto);
             this.guna2Panel1.Controls.Add(this.lblCodigoPostal);
-            this.guna2Panel1.Controls.Add(this.txtNombreCompleto);
+            this.guna2Panel1.Controls.Add(this.txtPaisDestino);
             this.guna2Panel1.Controls.Add(this.lblMunicipio);
             this.guna2Panel1.Controls.Add(this.lblNumeroTelefono);
-            this.guna2Panel1.Controls.Add(this.txtNombre);
-            this.guna2Panel1.Controls.Add(this.txtDistrito);
+            this.guna2Panel1.Controls.Add(this.txtNombreCompleto);
             this.guna2Panel1.Controls.Add(this.lblPais);
             this.guna2Panel1.Controls.Add(this.txtNumeroTelefono);
             this.guna2Panel1.Controls.Add(this.txtMunicipio);
-            this.guna2Panel1.Controls.Add(this.lblDistrito);
             this.guna2Panel1.Controls.Add(this.txtCodigoPostal);
             this.guna2Panel1.Controls.Add(this.txtEstado);
             this.guna2Panel1.Controls.Add(this.lblDireccion);
-            this.guna2Panel1.Location = new System.Drawing.Point(38, 12);
+            this.guna2Panel1.Location = new System.Drawing.Point(34, 12);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(539, 334);
             this.guna2Panel1.TabIndex = 32;
@@ -108,7 +106,7 @@
             this.txtDireccion.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDireccion.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtDireccion.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDireccion.Location = new System.Drawing.Point(142, 266);
+            this.txtDireccion.Location = new System.Drawing.Point(143, 232);
             this.txtDireccion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.PasswordChar = '\0';
@@ -147,25 +145,25 @@
             this.lblCodigoPostal.TabIndex = 18;
             this.lblCodigoPostal.Text = "Código postal:";
             // 
-            // txtNombreCompleto
+            // txtPaisDestino
             // 
-            this.txtNombreCompleto.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNombreCompleto.DefaultText = "";
-            this.txtNombreCompleto.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtNombreCompleto.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtNombreCompleto.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNombreCompleto.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNombreCompleto.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNombreCompleto.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtNombreCompleto.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNombreCompleto.Location = new System.Drawing.Point(143, 8);
-            this.txtNombreCompleto.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtNombreCompleto.Name = "txtNombreCompleto";
-            this.txtNombreCompleto.PasswordChar = '\0';
-            this.txtNombreCompleto.PlaceholderText = "";
-            this.txtNombreCompleto.SelectedText = "";
-            this.txtNombreCompleto.Size = new System.Drawing.Size(348, 33);
-            this.txtNombreCompleto.TabIndex = 10;
+            this.txtPaisDestino.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPaisDestino.DefaultText = "";
+            this.txtPaisDestino.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtPaisDestino.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtPaisDestino.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPaisDestino.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPaisDestino.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPaisDestino.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtPaisDestino.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPaisDestino.Location = new System.Drawing.Point(143, 8);
+            this.txtPaisDestino.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtPaisDestino.Name = "txtPaisDestino";
+            this.txtPaisDestino.PasswordChar = '\0';
+            this.txtPaisDestino.PlaceholderText = "";
+            this.txtPaisDestino.SelectedText = "";
+            this.txtPaisDestino.Size = new System.Drawing.Size(348, 33);
+            this.txtPaisDestino.TabIndex = 10;
             // 
             // lblMunicipio
             // 
@@ -187,45 +185,25 @@
             this.lblNumeroTelefono.TabIndex = 17;
             this.lblNumeroTelefono.Text = "Número de teléfono:";
             // 
-            // txtNombre
+            // txtNombreCompleto
             // 
-            this.txtNombre.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNombre.DefaultText = "";
-            this.txtNombre.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtNombre.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtNombre.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNombre.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNombre.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNombre.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtNombre.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNombre.Location = new System.Drawing.Point(143, 45);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.PasswordChar = '\0';
-            this.txtNombre.PlaceholderText = "";
-            this.txtNombre.SelectedText = "";
-            this.txtNombre.Size = new System.Drawing.Size(348, 33);
-            this.txtNombre.TabIndex = 11;
-            // 
-            // txtDistrito
-            // 
-            this.txtDistrito.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDistrito.DefaultText = "";
-            this.txtDistrito.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtDistrito.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtDistrito.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtDistrito.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtDistrito.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDistrito.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtDistrito.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDistrito.Location = new System.Drawing.Point(142, 229);
-            this.txtDistrito.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtDistrito.Name = "txtDistrito";
-            this.txtDistrito.PasswordChar = '\0';
-            this.txtDistrito.PlaceholderText = "";
-            this.txtDistrito.SelectedText = "";
-            this.txtDistrito.Size = new System.Drawing.Size(348, 33);
-            this.txtDistrito.TabIndex = 21;
+            this.txtNombreCompleto.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNombreCompleto.DefaultText = "";
+            this.txtNombreCompleto.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtNombreCompleto.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtNombreCompleto.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNombreCompleto.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNombreCompleto.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNombreCompleto.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtNombreCompleto.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNombreCompleto.Location = new System.Drawing.Point(143, 45);
+            this.txtNombreCompleto.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtNombreCompleto.Name = "txtNombreCompleto";
+            this.txtNombreCompleto.PasswordChar = '\0';
+            this.txtNombreCompleto.PlaceholderText = "";
+            this.txtNombreCompleto.SelectedText = "";
+            this.txtNombreCompleto.Size = new System.Drawing.Size(348, 33);
+            this.txtNombreCompleto.TabIndex = 11;
             // 
             // lblPais
             // 
@@ -277,16 +255,6 @@
             this.txtMunicipio.Size = new System.Drawing.Size(348, 33);
             this.txtMunicipio.TabIndex = 15;
             // 
-            // lblDistrito
-            // 
-            this.lblDistrito.BackColor = System.Drawing.Color.Transparent;
-            this.lblDistrito.Location = new System.Drawing.Point(83, 235);
-            this.lblDistrito.Margin = new System.Windows.Forms.Padding(4);
-            this.lblDistrito.Name = "lblDistrito";
-            this.lblDistrito.Size = new System.Drawing.Size(47, 18);
-            this.lblDistrito.TabIndex = 23;
-            this.lblDistrito.Text = "Distrito:";
-            // 
             // txtCodigoPostal
             // 
             this.txtCodigoPostal.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -330,7 +298,7 @@
             // lblDireccion
             // 
             this.lblDireccion.BackColor = System.Drawing.Color.Transparent;
-            this.lblDireccion.Location = new System.Drawing.Point(66, 272);
+            this.lblDireccion.Location = new System.Drawing.Point(67, 237);
             this.lblDireccion.Margin = new System.Windows.Forms.Padding(4);
             this.lblDireccion.Name = "lblDireccion";
             this.lblDireccion.Size = new System.Drawing.Size(63, 18);
@@ -343,7 +311,7 @@
             this.pnlPaypal.Controls.Add(this.txtContrasena);
             this.pnlPaypal.Controls.Add(this.txtCorreoElectronico);
             this.pnlPaypal.Controls.Add(this.lblCorreoElectronico);
-            this.pnlPaypal.Location = new System.Drawing.Point(463, 434);
+            this.pnlPaypal.Location = new System.Drawing.Point(453, 437);
             this.pnlPaypal.Margin = new System.Windows.Forms.Padding(4);
             this.pnlPaypal.Name = "pnlPaypal";
             this.pnlPaypal.Size = new System.Drawing.Size(424, 90);
@@ -415,12 +383,32 @@
             this.pnlPagoEnLinea.Controls.Add(this.lblMetodoDePagoEnLinea);
             this.pnlPagoEnLinea.Controls.Add(this.rdbPaypal);
             this.pnlPagoEnLinea.Controls.Add(this.rdbTarjetaDeCredito);
-            this.pnlPagoEnLinea.Location = new System.Drawing.Point(38, 364);
+            this.pnlPagoEnLinea.Location = new System.Drawing.Point(34, 367);
             this.pnlPagoEnLinea.Margin = new System.Windows.Forms.Padding(4);
             this.pnlPagoEnLinea.Name = "pnlPagoEnLinea";
             this.pnlPagoEnLinea.Size = new System.Drawing.Size(382, 238);
             this.pnlPagoEnLinea.TabIndex = 34;
             this.pnlPagoEnLinea.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlPagoEnLinea_Paint);
+            // 
+            // rdbEfectivo
+            // 
+            this.rdbEfectivo.AutoSize = true;
+            this.rdbEfectivo.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rdbEfectivo.CheckedState.BorderThickness = 0;
+            this.rdbEfectivo.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rdbEfectivo.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.rdbEfectivo.CheckedState.InnerOffset = -4;
+            this.rdbEfectivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
+            this.rdbEfectivo.Location = new System.Drawing.Point(11, 196);
+            this.rdbEfectivo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rdbEfectivo.Name = "rdbEfectivo";
+            this.rdbEfectivo.Size = new System.Drawing.Size(76, 20);
+            this.rdbEfectivo.TabIndex = 27;
+            this.rdbEfectivo.Text = "Efectivo";
+            this.rdbEfectivo.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.rdbEfectivo.UncheckedState.BorderThickness = 2;
+            this.rdbEfectivo.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.rdbEfectivo.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
             // 
             // lblMetodoDePagoEnLinea
             // 
@@ -477,7 +465,7 @@
             this.pnlPagoEnEfectivo.Controls.Add(this.txtCodigoDePago);
             this.pnlPagoEnEfectivo.Controls.Add(this.lblCodigoDePago);
             this.pnlPagoEnEfectivo.Controls.Add(this.MetodoDePagoEnEfectivo);
-            this.pnlPagoEnEfectivo.Location = new System.Drawing.Point(463, 365);
+            this.pnlPagoEnEfectivo.Location = new System.Drawing.Point(453, 368);
             this.pnlPagoEnEfectivo.Margin = new System.Windows.Forms.Padding(4);
             this.pnlPagoEnEfectivo.Name = "pnlPagoEnEfectivo";
             this.pnlPagoEnEfectivo.Size = new System.Drawing.Size(423, 65);
@@ -531,7 +519,7 @@
             this.pnlTarjetaDeCredito.Controls.Add(this.lblFechaDeVencimiento);
             this.pnlTarjetaDeCredito.Controls.Add(this.lblNumeroDeTarjeta);
             this.pnlTarjetaDeCredito.Controls.Add(this.txtNumeroTarjeta);
-            this.pnlTarjetaDeCredito.Location = new System.Drawing.Point(464, 435);
+            this.pnlTarjetaDeCredito.Location = new System.Drawing.Point(454, 438);
             this.pnlTarjetaDeCredito.Margin = new System.Windows.Forms.Padding(4);
             this.pnlTarjetaDeCredito.Name = "pnlTarjetaDeCredito";
             this.pnlTarjetaDeCredito.Size = new System.Drawing.Size(423, 128);
@@ -627,26 +615,6 @@
             this.txtNumeroTarjeta.Size = new System.Drawing.Size(324, 33);
             this.txtNumeroTarjeta.TabIndex = 27;
             // 
-            // rdbEfectivo
-            // 
-            this.rdbEfectivo.AutoSize = true;
-            this.rdbEfectivo.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rdbEfectivo.CheckedState.BorderThickness = 0;
-            this.rdbEfectivo.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rdbEfectivo.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rdbEfectivo.CheckedState.InnerOffset = -4;
-            this.rdbEfectivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
-            this.rdbEfectivo.Location = new System.Drawing.Point(11, 196);
-            this.rdbEfectivo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.rdbEfectivo.Name = "rdbEfectivo";
-            this.rdbEfectivo.Size = new System.Drawing.Size(76, 20);
-            this.rdbEfectivo.TabIndex = 27;
-            this.rdbEfectivo.Text = "Efectivo";
-            this.rdbEfectivo.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.rdbEfectivo.UncheckedState.BorderThickness = 2;
-            this.rdbEfectivo.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.rdbEfectivo.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            // 
             // btnRealizarPedido
             // 
             this.btnRealizarPedido.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -655,7 +623,7 @@
             this.btnRealizarPedido.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnRealizarPedido.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnRealizarPedido.ForeColor = System.Drawing.Color.White;
-            this.btnRealizarPedido.Location = new System.Drawing.Point(673, 192);
+            this.btnRealizarPedido.Location = new System.Drawing.Point(703, 204);
             this.btnRealizarPedido.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRealizarPedido.Name = "btnRealizarPedido";
             this.btnRealizarPedido.Size = new System.Drawing.Size(143, 38);
@@ -663,11 +631,33 @@
             this.btnRealizarPedido.Text = "Finalizar compra";
             this.btnRealizarPedido.Click += new System.EventHandler(this.btnRealizarPedido_Click);
             // 
+            // lblTotalNombre
+            // 
+            this.lblTotalNombre.BackColor = System.Drawing.Color.Transparent;
+            this.lblTotalNombre.Location = new System.Drawing.Point(690, 109);
+            this.lblTotalNombre.Margin = new System.Windows.Forms.Padding(4);
+            this.lblTotalNombre.Name = "lblTotalNombre";
+            this.lblTotalNombre.Size = new System.Drawing.Size(169, 18);
+            this.lblTotalNombre.TabIndex = 26;
+            this.lblTotalNombre.Text = "Costo total de los productos";
+            // 
+            // lblTotal
+            // 
+            this.lblTotal.BackColor = System.Drawing.Color.Transparent;
+            this.lblTotal.Location = new System.Drawing.Point(690, 145);
+            this.lblTotal.Margin = new System.Windows.Forms.Padding(4);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(10, 18);
+            this.lblTotal.TabIndex = 38;
+            this.lblTotal.Text = "$";
+            // 
             // Proceder_al_pago
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(951, 631);
+            this.ClientSize = new System.Drawing.Size(1079, 685);
+            this.Controls.Add(this.lblTotal);
+            this.Controls.Add(this.lblTotalNombre);
             this.Controls.Add(this.btnRealizarPedido);
             this.Controls.Add(this.pnlPaypal);
             this.Controls.Add(this.pnlPagoEnLinea);
@@ -687,6 +677,7 @@
             this.pnlTarjetaDeCredito.ResumeLayout(false);
             this.pnlTarjetaDeCredito.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -697,15 +688,13 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lblEstado;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblNombreCompleto;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblCodigoPostal;
-        private Guna.UI2.WinForms.Guna2TextBox txtNombreCompleto;
+        private Guna.UI2.WinForms.Guna2TextBox txtPaisDestino;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblMunicipio;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblNumeroTelefono;
-        private Guna.UI2.WinForms.Guna2TextBox txtNombre;
-        private Guna.UI2.WinForms.Guna2TextBox txtDistrito;
+        private Guna.UI2.WinForms.Guna2TextBox txtNombreCompleto;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblPais;
         private Guna.UI2.WinForms.Guna2TextBox txtNumeroTelefono;
         private Guna.UI2.WinForms.Guna2TextBox txtMunicipio;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblDistrito;
         private Guna.UI2.WinForms.Guna2TextBox txtCodigoPostal;
         private Guna.UI2.WinForms.Guna2TextBox txtEstado;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblDireccion;
@@ -731,5 +720,7 @@
         private Guna.UI2.WinForms.Guna2TextBox txtNumeroTarjeta;
         private Guna.UI2.WinForms.Guna2RadioButton rdbEfectivo;
         private Guna.UI2.WinForms.Guna2Button btnRealizarPedido;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblTotalNombre;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblTotal;
     }
 }
