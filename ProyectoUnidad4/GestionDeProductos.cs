@@ -24,6 +24,13 @@ namespace ProyectoUnidad4
         
         private void ConfigurarTabla()
         {
+            //agregar imagen a la columna
+            DataGridViewImageColumn imgColumn = new DataGridViewImageColumn();
+            imgColumn.Name = "imagen";
+            imgColumn.HeaderText = "Foto";
+            imgColumn.ImageLayout = DataGridViewImageCellLayout.Zoom;
+            dgvProductos.Columns.Add(imgColumn);
+
             //agregar columnas a dgvProductos
             dgvProductos.Columns.Add("Nombre", "Nombre");
             dgvProductos.Columns.Add("Categoria", "Categoria");
@@ -44,7 +51,9 @@ namespace ProyectoUnidad4
 
             foreach (var producto in Producto.productos)
             {
+                Image img = Image.FromFile(producto.RutaImagen);
                 dgvProductos.Rows.Add(
+                    img,
                     producto.Nombre,
                     producto.Categoria,
                     producto.Precio,
@@ -58,8 +67,6 @@ namespace ProyectoUnidad4
         private void GestionDeProductos_Load(object sender, EventArgs e)
         {
             CargarDataGridView();
-            CargarComboBox();
-
         }
 
         private void btnSalir_Click(object sender, EventArgs e)

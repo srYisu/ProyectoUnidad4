@@ -42,5 +42,12 @@ namespace ProyectoUnidad4
             form1.Show();
             this.Close();
         }
+
+        private void btnPaginaPrincipal_Click(object sender, EventArgs e)
+        {
+            ComprasPrincipal principal = new ComprasPrincipal();
+            principal.Show();
+            
+        }
     }
 }
