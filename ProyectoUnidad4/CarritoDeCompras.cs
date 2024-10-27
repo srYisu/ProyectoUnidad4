@@ -17,6 +17,7 @@ namespace ProyectoUnidad4
             InitializeComponent();
             ConfigurarTabla();
             CargarProductosCarrito();
+            CalcularTotal();
             dgvCarritoDeCompras.RowHeadersVisible = false; // Eliminar primera columna vacía
         }
 
@@ -74,6 +75,25 @@ namespace ProyectoUnidad4
         {
             Producto.caritos.RemoveAt(index);
             CargarProductosCarrito();
+        }
+        double total = 0;
+        private void CalcularTotal()
+        {
+            foreach (var precio in Producto.caritos)
+            {
+                total += (precio.Precio * precio.CantidadEnInventario);
+            }
+            lblTotalDeCostos.Text = total.ToString();
+        }
+        private void btnRealizarPedido_Click(object sender, EventArgs e)
+        {
+            Proceder_al_pago pago = new Proceder_al_pago();
+            pago.Show();
+        }
+
+        private void CarritoDeCompras_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

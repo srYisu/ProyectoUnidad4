@@ -8,7 +8,8 @@ namespace ProyectoUnidad4
 {
     public abstract class Pedido
     {
-
-
+        public abstract double CalcularTotalPedido();
+        
+        
     }
 }

@@ -8,9 +8,9 @@ namespace ProyectoUnidad4
 {
     public class PagoEfectivon: IMetodo
     {
-        public void ProcesarPago()
+        public void ProcesarPago(string pais, string nombre, int telefono, int postal, string estado, string municipo, string direccion, double total, string entrega)
         {
-
+            Random rnd = new Random();
         }
     }
 }

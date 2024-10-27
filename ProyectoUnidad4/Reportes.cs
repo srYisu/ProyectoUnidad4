@@ -15,9 +15,10 @@ namespace ProyectoUnidad4
         public Reportes()
         {
             InitializeComponent();
-
+            ConfigurarTablaInventario();
+            ConfigurarTablaVentas();
+            CargarTablaVentas();
             // Agregar columnas a los DataGridView
-            dgvVentas.Columns.Add("Prueba1", "Prueba1");
             dgvInventarioo.Columns.Add("Prueba2", "Prueba2");
             dgvClientes.Columns.Add("Prueba3", "Prueba3");
 
@@ -32,6 +33,50 @@ namespace ProyectoUnidad4
             pnlClientes.Visible = false;
         }
 
+        public void CargarTablaVentas()
+        {
+            foreach (var ventas in ReporteVentas.ventas)
+            {
+                Image img = Image.FromFile(ventas.RutaImagen);
+                dgvVentas.Rows.Add(
+                    img,
+                    ventas.Nombre,
+                    ventas.Categoria,
+                    ventas.Precio,
+                    ventas.CantidadEnInventario
+                    );
+            }
+        }
+        private void ConfigurarTablaVentas()
+        {
+            //agregar imagen a la columna
+            DataGridViewImageColumn imgColumn = new DataGridViewImageColumn();
+            imgColumn.Name = "imagen";
+            imgColumn.HeaderText = "Foto";
+            imgColumn.ImageLayout = DataGridViewImageCellLayout.Zoom;
+            dgvVentas.Columns.Add(imgColumn);
+
+            //agregar columnas a dgvProductos
+            dgvVentas.Columns.Add("Nombre", "Nombre");
+            dgvVentas.Columns.Add("Categoria", "Categoria");
+            dgvVentas.Columns.Add("Precio", "Precio");
+            dgvVentas.Columns.Add("Cantidad", "Cantidad");
+        }
+        private void ConfigurarTablaInventario()
+        {
+            //agregar imagen a la columna
+            DataGridViewImageColumn imgColumn = new DataGridViewImageColumn();
+            imgColumn.Name = "imagen";
+            imgColumn.HeaderText = "Foto";
+            imgColumn.ImageLayout = DataGridViewImageCellLayout.Zoom;
+            dgvInventarioo.Columns.Add(imgColumn);
+
+            //agregar columnas a dgvProductos
+            dgvInventarioo.Columns.Add("Nombre", "Nombre");
+            dgvInventarioo.Columns.Add("Categoria", "Categoria");
+            dgvInventarioo.Columns.Add("Precio", "Precio");
+            dgvInventarioo.Columns.Add("Cantidad", "Cantidad");
+        }
         private void RadioButton_CheckedChanged(object sender, EventArgs e)
         {
             MostrarPanelSeleccionado();

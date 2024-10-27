@@ -8,6 +8,9 @@ namespace ProyectoUnidad4
 {
     public class PedidoOnline : Pedido
     {
-        
+        public override double CalcularTotalPedido()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
