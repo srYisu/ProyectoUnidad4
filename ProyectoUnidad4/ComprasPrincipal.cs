@@ -100,5 +100,11 @@ namespace ProyectoUnidad4
                 btnAnteriorPag.Visible = false;
             }
         }
+
+        private void picBtnAgregarAlCarrito1_Click(object sender, EventArgs e)
+        {
+            //codigo apra cambiar el icono del carrito
+            picBtnCarrito.Image = Properties.Resources.carritoDeCompras__1_;
+        }
     }
 }

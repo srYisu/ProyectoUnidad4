@@ -83,6 +83,26 @@ namespace ProyectoUnidad4.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap carritoDeCompras {
+            get {
+                object obj = ResourceManager.GetObject("carritoDeCompras", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap carritoDeCompras__1_ {
+            get {
+                object obj = ResourceManager.GetObject("carritoDeCompras (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap carritoFlecha {
             get {
                 object obj = ResourceManager.GetObject("carritoFlecha", resourceCulture);
@@ -146,6 +166,16 @@ namespace ProyectoUnidad4.Properties {
         internal static System.Drawing.Bitmap lupaBuscar {
             get {
                 object obj = ResourceManager.GetObject("lupaBuscar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lupaBuscar__1_ {
+            get {
+                object obj = ResourceManager.GetObject("lupaBuscar (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

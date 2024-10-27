@@ -32,52 +32,49 @@
             this.pnlMoradoOcuroArriba = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.picBtnCarrito = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.picBtnUsuario = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.picBtnBuscar = new Guna.UI2.WinForms.Guna2PictureBox();
             this.txtBuscador = new Guna.UI2.WinForms.Guna2TextBox();
-            this.picÑemu = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pnlFondoGeneral = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.scbFormPrincipal = new Guna.UI2.WinForms.Guna2VScrollBar();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.picBtnAgregarAlCarrito4 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.cmbCantidadCompra4 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lblCantdiad4 = new System.Windows.Forms.Label();
             this.lblPrecioProducto4 = new System.Windows.Forms.Label();
             this.lblPrecio4 = new System.Windows.Forms.Label();
-            this.picProducto4 = new System.Windows.Forms.PictureBox();
-            this.picBtnAgregarAlCarrito2 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.cmbCantidadCompra2 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lblCantidad2 = new System.Windows.Forms.Label();
             this.lblPrecioProducto2 = new System.Windows.Forms.Label();
             this.lblPrecio2 = new System.Windows.Forms.Label();
-            this.picProducto2 = new System.Windows.Forms.PictureBox();
-            this.picBtnAgreagarAlCarrito3 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.cmbCantidadCompra3 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lblCantidad3 = new System.Windows.Forms.Label();
             this.lblPrecioProducto3 = new System.Windows.Forms.Label();
             this.lblPrecio3 = new System.Windows.Forms.Label();
-            this.picProducto3 = new System.Windows.Forms.PictureBox();
-            this.picBtnAgregarAlCarrito1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.cmbCantidadComprar1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lblCantidad1 = new System.Windows.Forms.Label();
             this.lblPrecioProducto1 = new System.Windows.Forms.Label();
             this.lblPrecio1 = new System.Windows.Forms.Label();
-            this.picProducto1 = new System.Windows.Forms.PictureBox();
             this.pnlColorMoradoClaro = new Guna.UI2.WinForms.Guna2Panel();
-            this.picDIaDeMuertos = new Guna.UI2.WinForms.Guna2PictureBox();
             this.lblProducto1 = new System.Windows.Forms.Label();
             this.lblProducto2 = new System.Windows.Forms.Label();
             this.lblProducto3 = new System.Windows.Forms.Label();
             this.lblProducto4 = new System.Windows.Forms.Label();
             this.btnSiguientePag = new Guna.UI2.WinForms.Guna2Button();
             this.btnAnteriorPag = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.picBtnAgregarAlCarrito4 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.picProducto4 = new System.Windows.Forms.PictureBox();
+            this.picBtnAgregarAlCarrito2 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.picProducto2 = new System.Windows.Forms.PictureBox();
+            this.picBtnAgreagarAlCarrito3 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.picProducto3 = new System.Windows.Forms.PictureBox();
+            this.picBtnAgregarAlCarrito1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.picProducto1 = new System.Windows.Forms.PictureBox();
+            this.picDIaDeMuertos = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.picBtnCarrito = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.picBtnUsuario = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.picBtnBuscar = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.picÑemu = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pnlMoradoOcuroArriba.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picBtnCarrito)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBtnUsuario)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBtnBuscar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picÑemu)).BeginInit();
             this.pnlFondoGeneral.SuspendLayout();
+            this.pnlColorMoradoClaro.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBtnAgregarAlCarrito4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picProducto4)).BeginInit();
@@ -87,8 +84,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.picProducto3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBtnAgregarAlCarrito1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picProducto1)).BeginInit();
-            this.pnlColorMoradoClaro.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picDIaDeMuertos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBtnCarrito)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBtnUsuario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBtnBuscar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picÑemu)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlMoradoOcuroArriba
@@ -127,49 +127,6 @@
             this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
             this.guna2ControlBox1.TabIndex = 1;
             // 
-            // picBtnCarrito
-            // 
-            this.picBtnCarrito.BackColor = System.Drawing.Color.Transparent;
-            this.picBtnCarrito.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picBtnCarrito.Image = ((System.Drawing.Image)(resources.GetObject("picBtnCarrito.Image")));
-            this.picBtnCarrito.ImageRotate = 0F;
-            this.picBtnCarrito.Location = new System.Drawing.Point(1216, 23);
-            this.picBtnCarrito.Name = "picBtnCarrito";
-            this.picBtnCarrito.Size = new System.Drawing.Size(85, 70);
-            this.picBtnCarrito.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picBtnCarrito.TabIndex = 5;
-            this.picBtnCarrito.TabStop = false;
-            this.picBtnCarrito.UseTransparentBackground = true;
-            // 
-            // picBtnUsuario
-            // 
-            this.picBtnUsuario.BackColor = System.Drawing.Color.Transparent;
-            this.picBtnUsuario.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picBtnUsuario.Image = ((System.Drawing.Image)(resources.GetObject("picBtnUsuario.Image")));
-            this.picBtnUsuario.ImageRotate = 0F;
-            this.picBtnUsuario.Location = new System.Drawing.Point(1092, 23);
-            this.picBtnUsuario.Name = "picBtnUsuario";
-            this.picBtnUsuario.Size = new System.Drawing.Size(85, 70);
-            this.picBtnUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picBtnUsuario.TabIndex = 4;
-            this.picBtnUsuario.TabStop = false;
-            this.picBtnUsuario.UseTransparentBackground = true;
-            // 
-            // picBtnBuscar
-            // 
-            this.picBtnBuscar.BackColor = System.Drawing.Color.Transparent;
-            this.picBtnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picBtnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("picBtnBuscar.Image")));
-            this.picBtnBuscar.ImageRotate = 0F;
-            this.picBtnBuscar.Location = new System.Drawing.Point(959, 22);
-            this.picBtnBuscar.Name = "picBtnBuscar";
-            this.picBtnBuscar.Size = new System.Drawing.Size(85, 70);
-            this.picBtnBuscar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picBtnBuscar.TabIndex = 3;
-            this.picBtnBuscar.TabStop = false;
-            this.picBtnBuscar.UseTransparentBackground = true;
-            this.picBtnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
-            // 
             // txtBuscador
             // 
             this.txtBuscador.BorderRadius = 20;
@@ -190,19 +147,6 @@
             this.txtBuscador.SelectedText = "";
             this.txtBuscador.Size = new System.Drawing.Size(831, 46);
             this.txtBuscador.TabIndex = 1;
-            // 
-            // picÑemu
-            // 
-            this.picÑemu.BackColor = System.Drawing.Color.Transparent;
-            this.picÑemu.Image = ((System.Drawing.Image)(resources.GetObject("picÑemu.Image")));
-            this.picÑemu.ImageRotate = 0F;
-            this.picÑemu.Location = new System.Drawing.Point(9, -10);
-            this.picÑemu.Name = "picÑemu";
-            this.picÑemu.Size = new System.Drawing.Size(185, 133);
-            this.picÑemu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picÑemu.TabIndex = 0;
-            this.picÑemu.TabStop = false;
-            this.picÑemu.UseTransparentBackground = true;
             // 
             // pnlFondoGeneral
             // 
@@ -257,30 +201,6 @@
             this.scbFormPrincipal.TabIndex = 33;
             this.scbFormPrincipal.Scroll += new System.Windows.Forms.ScrollEventHandler(this.scbFormPrincipal_Scroll);
             // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(906, 332);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(445, 611);
-            this.guna2PictureBox1.TabIndex = 32;
-            this.guna2PictureBox1.TabStop = false;
-            // 
-            // picBtnAgregarAlCarrito4
-            // 
-            this.picBtnAgregarAlCarrito4.BackColor = System.Drawing.Color.Transparent;
-            this.picBtnAgregarAlCarrito4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picBtnAgregarAlCarrito4.Image = ((System.Drawing.Image)(resources.GetObject("picBtnAgregarAlCarrito4.Image")));
-            this.picBtnAgregarAlCarrito4.ImageRotate = 0F;
-            this.picBtnAgregarAlCarrito4.Location = new System.Drawing.Point(726, 762);
-            this.picBtnAgregarAlCarrito4.Name = "picBtnAgregarAlCarrito4";
-            this.picBtnAgregarAlCarrito4.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.picBtnAgregarAlCarrito4.Size = new System.Drawing.Size(58, 62);
-            this.picBtnAgregarAlCarrito4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picBtnAgregarAlCarrito4.TabIndex = 31;
-            this.picBtnAgregarAlCarrito4.TabStop = false;
-            this.picBtnAgregarAlCarrito4.UseTransparentBackground = true;
-            // 
             // cmbCantidadCompra4
             // 
             this.cmbCantidadCompra4.BackColor = System.Drawing.Color.Transparent;
@@ -328,29 +248,6 @@
             this.lblPrecio4.Size = new System.Drawing.Size(49, 16);
             this.lblPrecio4.TabIndex = 27;
             this.lblPrecio4.Text = "Precio:";
-            // 
-            // picProducto4
-            // 
-            this.picProducto4.Location = new System.Drawing.Point(572, 655);
-            this.picProducto4.Name = "picProducto4";
-            this.picProducto4.Size = new System.Drawing.Size(221, 183);
-            this.picProducto4.TabIndex = 26;
-            this.picProducto4.TabStop = false;
-            // 
-            // picBtnAgregarAlCarrito2
-            // 
-            this.picBtnAgregarAlCarrito2.BackColor = System.Drawing.Color.Transparent;
-            this.picBtnAgregarAlCarrito2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picBtnAgregarAlCarrito2.Image = ((System.Drawing.Image)(resources.GetObject("picBtnAgregarAlCarrito2.Image")));
-            this.picBtnAgregarAlCarrito2.ImageRotate = 0F;
-            this.picBtnAgregarAlCarrito2.Location = new System.Drawing.Point(724, 439);
-            this.picBtnAgregarAlCarrito2.Name = "picBtnAgregarAlCarrito2";
-            this.picBtnAgregarAlCarrito2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.picBtnAgregarAlCarrito2.Size = new System.Drawing.Size(58, 62);
-            this.picBtnAgregarAlCarrito2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picBtnAgregarAlCarrito2.TabIndex = 25;
-            this.picBtnAgregarAlCarrito2.TabStop = false;
-            this.picBtnAgregarAlCarrito2.UseTransparentBackground = true;
             // 
             // cmbCantidadCompra2
             // 
@@ -400,29 +297,6 @@
             this.lblPrecio2.TabIndex = 21;
             this.lblPrecio2.Text = "Precio:";
             // 
-            // picProducto2
-            // 
-            this.picProducto2.Location = new System.Drawing.Point(570, 332);
-            this.picProducto2.Name = "picProducto2";
-            this.picProducto2.Size = new System.Drawing.Size(221, 183);
-            this.picProducto2.TabIndex = 20;
-            this.picProducto2.TabStop = false;
-            // 
-            // picBtnAgreagarAlCarrito3
-            // 
-            this.picBtnAgreagarAlCarrito3.BackColor = System.Drawing.Color.Transparent;
-            this.picBtnAgreagarAlCarrito3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picBtnAgreagarAlCarrito3.Image = ((System.Drawing.Image)(resources.GetObject("picBtnAgreagarAlCarrito3.Image")));
-            this.picBtnAgreagarAlCarrito3.ImageRotate = 0F;
-            this.picBtnAgreagarAlCarrito3.Location = new System.Drawing.Point(237, 762);
-            this.picBtnAgreagarAlCarrito3.Name = "picBtnAgreagarAlCarrito3";
-            this.picBtnAgreagarAlCarrito3.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.picBtnAgreagarAlCarrito3.Size = new System.Drawing.Size(58, 62);
-            this.picBtnAgreagarAlCarrito3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picBtnAgreagarAlCarrito3.TabIndex = 19;
-            this.picBtnAgreagarAlCarrito3.TabStop = false;
-            this.picBtnAgreagarAlCarrito3.UseTransparentBackground = true;
-            // 
             // cmbCantidadCompra3
             // 
             this.cmbCantidadCompra3.BackColor = System.Drawing.Color.Transparent;
@@ -470,29 +344,6 @@
             this.lblPrecio3.Size = new System.Drawing.Size(49, 16);
             this.lblPrecio3.TabIndex = 15;
             this.lblPrecio3.Text = "Precio:";
-            // 
-            // picProducto3
-            // 
-            this.picProducto3.Location = new System.Drawing.Point(83, 655);
-            this.picProducto3.Name = "picProducto3";
-            this.picProducto3.Size = new System.Drawing.Size(221, 183);
-            this.picProducto3.TabIndex = 14;
-            this.picProducto3.TabStop = false;
-            // 
-            // picBtnAgregarAlCarrito1
-            // 
-            this.picBtnAgregarAlCarrito1.BackColor = System.Drawing.Color.Transparent;
-            this.picBtnAgregarAlCarrito1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picBtnAgregarAlCarrito1.Image = ((System.Drawing.Image)(resources.GetObject("picBtnAgregarAlCarrito1.Image")));
-            this.picBtnAgregarAlCarrito1.ImageRotate = 0F;
-            this.picBtnAgregarAlCarrito1.Location = new System.Drawing.Point(237, 439);
-            this.picBtnAgregarAlCarrito1.Name = "picBtnAgregarAlCarrito1";
-            this.picBtnAgregarAlCarrito1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.picBtnAgregarAlCarrito1.Size = new System.Drawing.Size(58, 62);
-            this.picBtnAgregarAlCarrito1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picBtnAgregarAlCarrito1.TabIndex = 13;
-            this.picBtnAgregarAlCarrito1.TabStop = false;
-            this.picBtnAgregarAlCarrito1.UseTransparentBackground = true;
             // 
             // cmbCantidadComprar1
             // 
@@ -542,14 +393,6 @@
             this.lblPrecio1.TabIndex = 4;
             this.lblPrecio1.Text = "Precio:";
             // 
-            // picProducto1
-            // 
-            this.picProducto1.Location = new System.Drawing.Point(83, 332);
-            this.picProducto1.Name = "picProducto1";
-            this.picProducto1.Size = new System.Drawing.Size(221, 183);
-            this.picProducto1.TabIndex = 3;
-            this.picProducto1.TabStop = false;
-            // 
             // pnlColorMoradoClaro
             // 
             this.pnlColorMoradoClaro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(55)))), ((int)(((byte)(166)))));
@@ -558,17 +401,6 @@
             this.pnlColorMoradoClaro.Name = "pnlColorMoradoClaro";
             this.pnlColorMoradoClaro.Size = new System.Drawing.Size(1550, 199);
             this.pnlColorMoradoClaro.TabIndex = 2;
-            // 
-            // picDIaDeMuertos
-            // 
-            this.picDIaDeMuertos.Image = ((System.Drawing.Image)(resources.GetObject("picDIaDeMuertos.Image")));
-            this.picDIaDeMuertos.ImageRotate = 0F;
-            this.picDIaDeMuertos.Location = new System.Drawing.Point(338, 3);
-            this.picDIaDeMuertos.Name = "picDIaDeMuertos";
-            this.picDIaDeMuertos.Size = new System.Drawing.Size(693, 211);
-            this.picDIaDeMuertos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picDIaDeMuertos.TabIndex = 0;
-            this.picDIaDeMuertos.TabStop = false;
             // 
             // lblProducto1
             // 
@@ -636,6 +468,175 @@
             this.btnAnteriorPag.Text = "Anterior";
             this.btnAnteriorPag.Click += new System.EventHandler(this.btnAnteriorPag_Click);
             // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(906, 332);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(445, 611);
+            this.guna2PictureBox1.TabIndex = 32;
+            this.guna2PictureBox1.TabStop = false;
+            // 
+            // picBtnAgregarAlCarrito4
+            // 
+            this.picBtnAgregarAlCarrito4.BackColor = System.Drawing.Color.Transparent;
+            this.picBtnAgregarAlCarrito4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picBtnAgregarAlCarrito4.Image = ((System.Drawing.Image)(resources.GetObject("picBtnAgregarAlCarrito4.Image")));
+            this.picBtnAgregarAlCarrito4.ImageRotate = 0F;
+            this.picBtnAgregarAlCarrito4.Location = new System.Drawing.Point(726, 762);
+            this.picBtnAgregarAlCarrito4.Name = "picBtnAgregarAlCarrito4";
+            this.picBtnAgregarAlCarrito4.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.picBtnAgregarAlCarrito4.Size = new System.Drawing.Size(58, 62);
+            this.picBtnAgregarAlCarrito4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBtnAgregarAlCarrito4.TabIndex = 31;
+            this.picBtnAgregarAlCarrito4.TabStop = false;
+            this.picBtnAgregarAlCarrito4.UseTransparentBackground = true;
+            // 
+            // picProducto4
+            // 
+            this.picProducto4.Location = new System.Drawing.Point(572, 655);
+            this.picProducto4.Name = "picProducto4";
+            this.picProducto4.Size = new System.Drawing.Size(221, 183);
+            this.picProducto4.TabIndex = 26;
+            this.picProducto4.TabStop = false;
+            // 
+            // picBtnAgregarAlCarrito2
+            // 
+            this.picBtnAgregarAlCarrito2.BackColor = System.Drawing.Color.Transparent;
+            this.picBtnAgregarAlCarrito2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picBtnAgregarAlCarrito2.Image = ((System.Drawing.Image)(resources.GetObject("picBtnAgregarAlCarrito2.Image")));
+            this.picBtnAgregarAlCarrito2.ImageRotate = 0F;
+            this.picBtnAgregarAlCarrito2.Location = new System.Drawing.Point(724, 439);
+            this.picBtnAgregarAlCarrito2.Name = "picBtnAgregarAlCarrito2";
+            this.picBtnAgregarAlCarrito2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.picBtnAgregarAlCarrito2.Size = new System.Drawing.Size(58, 62);
+            this.picBtnAgregarAlCarrito2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBtnAgregarAlCarrito2.TabIndex = 25;
+            this.picBtnAgregarAlCarrito2.TabStop = false;
+            this.picBtnAgregarAlCarrito2.UseTransparentBackground = true;
+            // 
+            // picProducto2
+            // 
+            this.picProducto2.Location = new System.Drawing.Point(570, 332);
+            this.picProducto2.Name = "picProducto2";
+            this.picProducto2.Size = new System.Drawing.Size(221, 183);
+            this.picProducto2.TabIndex = 20;
+            this.picProducto2.TabStop = false;
+            // 
+            // picBtnAgreagarAlCarrito3
+            // 
+            this.picBtnAgreagarAlCarrito3.BackColor = System.Drawing.Color.Transparent;
+            this.picBtnAgreagarAlCarrito3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picBtnAgreagarAlCarrito3.Image = ((System.Drawing.Image)(resources.GetObject("picBtnAgreagarAlCarrito3.Image")));
+            this.picBtnAgreagarAlCarrito3.ImageRotate = 0F;
+            this.picBtnAgreagarAlCarrito3.Location = new System.Drawing.Point(237, 762);
+            this.picBtnAgreagarAlCarrito3.Name = "picBtnAgreagarAlCarrito3";
+            this.picBtnAgreagarAlCarrito3.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.picBtnAgreagarAlCarrito3.Size = new System.Drawing.Size(58, 62);
+            this.picBtnAgreagarAlCarrito3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBtnAgreagarAlCarrito3.TabIndex = 19;
+            this.picBtnAgreagarAlCarrito3.TabStop = false;
+            this.picBtnAgreagarAlCarrito3.UseTransparentBackground = true;
+            // 
+            // picProducto3
+            // 
+            this.picProducto3.Location = new System.Drawing.Point(83, 655);
+            this.picProducto3.Name = "picProducto3";
+            this.picProducto3.Size = new System.Drawing.Size(221, 183);
+            this.picProducto3.TabIndex = 14;
+            this.picProducto3.TabStop = false;
+            // 
+            // picBtnAgregarAlCarrito1
+            // 
+            this.picBtnAgregarAlCarrito1.BackColor = System.Drawing.Color.Transparent;
+            this.picBtnAgregarAlCarrito1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picBtnAgregarAlCarrito1.Image = ((System.Drawing.Image)(resources.GetObject("picBtnAgregarAlCarrito1.Image")));
+            this.picBtnAgregarAlCarrito1.ImageRotate = 0F;
+            this.picBtnAgregarAlCarrito1.Location = new System.Drawing.Point(237, 439);
+            this.picBtnAgregarAlCarrito1.Name = "picBtnAgregarAlCarrito1";
+            this.picBtnAgregarAlCarrito1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.picBtnAgregarAlCarrito1.Size = new System.Drawing.Size(58, 62);
+            this.picBtnAgregarAlCarrito1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBtnAgregarAlCarrito1.TabIndex = 13;
+            this.picBtnAgregarAlCarrito1.TabStop = false;
+            this.picBtnAgregarAlCarrito1.UseTransparentBackground = true;
+            this.picBtnAgregarAlCarrito1.Click += new System.EventHandler(this.picBtnAgregarAlCarrito1_Click);
+            // 
+            // picProducto1
+            // 
+            this.picProducto1.Location = new System.Drawing.Point(83, 332);
+            this.picProducto1.Name = "picProducto1";
+            this.picProducto1.Size = new System.Drawing.Size(221, 183);
+            this.picProducto1.TabIndex = 3;
+            this.picProducto1.TabStop = false;
+            // 
+            // picDIaDeMuertos
+            // 
+            this.picDIaDeMuertos.Image = ((System.Drawing.Image)(resources.GetObject("picDIaDeMuertos.Image")));
+            this.picDIaDeMuertos.ImageRotate = 0F;
+            this.picDIaDeMuertos.Location = new System.Drawing.Point(338, 3);
+            this.picDIaDeMuertos.Name = "picDIaDeMuertos";
+            this.picDIaDeMuertos.Size = new System.Drawing.Size(693, 211);
+            this.picDIaDeMuertos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picDIaDeMuertos.TabIndex = 0;
+            this.picDIaDeMuertos.TabStop = false;
+            // 
+            // picBtnCarrito
+            // 
+            this.picBtnCarrito.BackColor = System.Drawing.Color.Transparent;
+            this.picBtnCarrito.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picBtnCarrito.Image = global::ProyectoUnidad4.Properties.Resources.lupaBuscar__1_;
+            this.picBtnCarrito.ImageRotate = 0F;
+            this.picBtnCarrito.Location = new System.Drawing.Point(1216, 23);
+            this.picBtnCarrito.Name = "picBtnCarrito";
+            this.picBtnCarrito.Size = new System.Drawing.Size(85, 70);
+            this.picBtnCarrito.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBtnCarrito.TabIndex = 5;
+            this.picBtnCarrito.TabStop = false;
+            this.picBtnCarrito.UseTransparentBackground = true;
+            // 
+            // picBtnUsuario
+            // 
+            this.picBtnUsuario.BackColor = System.Drawing.Color.Transparent;
+            this.picBtnUsuario.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picBtnUsuario.Image = ((System.Drawing.Image)(resources.GetObject("picBtnUsuario.Image")));
+            this.picBtnUsuario.ImageRotate = 0F;
+            this.picBtnUsuario.Location = new System.Drawing.Point(1092, 23);
+            this.picBtnUsuario.Name = "picBtnUsuario";
+            this.picBtnUsuario.Size = new System.Drawing.Size(85, 70);
+            this.picBtnUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBtnUsuario.TabIndex = 4;
+            this.picBtnUsuario.TabStop = false;
+            this.picBtnUsuario.UseTransparentBackground = true;
+            // 
+            // picBtnBuscar
+            // 
+            this.picBtnBuscar.BackColor = System.Drawing.Color.Transparent;
+            this.picBtnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picBtnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("picBtnBuscar.Image")));
+            this.picBtnBuscar.ImageRotate = 0F;
+            this.picBtnBuscar.Location = new System.Drawing.Point(959, 22);
+            this.picBtnBuscar.Name = "picBtnBuscar";
+            this.picBtnBuscar.Size = new System.Drawing.Size(85, 70);
+            this.picBtnBuscar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBtnBuscar.TabIndex = 3;
+            this.picBtnBuscar.TabStop = false;
+            this.picBtnBuscar.UseTransparentBackground = true;
+            this.picBtnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
+            // picÑemu
+            // 
+            this.picÑemu.BackColor = System.Drawing.Color.Transparent;
+            this.picÑemu.Image = ((System.Drawing.Image)(resources.GetObject("picÑemu.Image")));
+            this.picÑemu.ImageRotate = 0F;
+            this.picÑemu.Location = new System.Drawing.Point(9, -10);
+            this.picÑemu.Name = "picÑemu";
+            this.picÑemu.Size = new System.Drawing.Size(185, 133);
+            this.picÑemu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picÑemu.TabIndex = 0;
+            this.picÑemu.TabStop = false;
+            this.picÑemu.UseTransparentBackground = true;
+            // 
             // ComprasPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -648,12 +649,9 @@
             this.Text = "Compras";
             this.Load += new System.EventHandler(this.ComprasPrincipal_Load);
             this.pnlMoradoOcuroArriba.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picBtnCarrito)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBtnUsuario)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBtnBuscar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picÑemu)).EndInit();
             this.pnlFondoGeneral.ResumeLayout(false);
             this.pnlFondoGeneral.PerformLayout();
+            this.pnlColorMoradoClaro.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBtnAgregarAlCarrito4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picProducto4)).EndInit();
@@ -663,8 +661,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.picProducto3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBtnAgregarAlCarrito1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picProducto1)).EndInit();
-            this.pnlColorMoradoClaro.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picDIaDeMuertos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBtnCarrito)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBtnUsuario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBtnBuscar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picÑemu)).EndInit();
             this.ResumeLayout(false);
 
         }
