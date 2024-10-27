@@ -27,10 +27,27 @@ namespace ProyectoUnidad4
             pnlFondoGeneral.MouseWheel += pnlFondoGeneral_MouseWheel;
             pnlFondoGeneral.Focus();
             cargarProductos();
-            btnAnteriorPag.Visible = false;
+            if (Producto.caritos.Count > 0)
+            {
+                picBtnCarrito.Image = Properties.Resources.carritoDeCompras__1_;
+            }
         }
         int inicio = 0;
         int tamano = 4;
+
+        List<string> productos = new List<string>();
+        List<double> precios = new List<double>();
+        List<string> rutas = new List<string>();
+        List<int> cantidades = new List<int>();
+        List<string> categorias = new List<string>();
+
+        private void picBtnCarrito_Click(object sender, EventArgs e)
+        {
+            CarritoDeCompras carrito = new CarritoDeCompras();
+            carrito.Show();
+            this.Close();
+        }
+
         public void cargarProductos()
         {
             //referencia a los pictureBox
@@ -49,6 +66,13 @@ namespace ProyectoUnidad4
                 int indiceActual = inicio + i;
                 if (indiceActual < Producto.productos.Count)
                 {
+                    // Agrega cada propiedad a la lista correspondiente
+                    productos.Add(Producto.productos[indiceActual].Nombre);
+                    precios.Add(Producto.productos[indiceActual].Precio);
+                    rutas.Add(Producto.productos[indiceActual].RutaImagen);
+                    //cantidades.Add(Producto.productos[indiceActual].CantidadEnInventario);
+                    categorias.Add(Producto.productos[indiceActual].Categoria);
+
                     string rutaImagen = Producto.productos[indiceActual].RutaImagen;
                     pictureBoxes[i].Image = Image.FromFile(rutaImagen);
                     nombre[i].Text = Producto.productos [indiceActual].Nombre;
@@ -61,7 +85,7 @@ namespace ProyectoUnidad4
 
         private void ComprasPrincipal_Load(object sender, EventArgs e)
         {
-
+            btnAnteriorPag.Visible = false;
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
@@ -100,11 +124,126 @@ namespace ProyectoUnidad4
                 btnAnteriorPag.Visible = false;
             }
         }
-
+        Producto pedido;
         private void picBtnAgregarAlCarrito1_Click(object sender, EventArgs e)
         {
-            //codigo apra cambiar el icono del carrito
-            picBtnCarrito.Image = Properties.Resources.carritoDeCompras__1_;
+            // Asegúrate de que hay datos en la lista de productos temporales
+            if (productos.Count > 0 && precios.Count > 0 && rutas.Count > 0 && categorias.Count > 0)
+            {
+                // Usamos el índice 0 para el primer producto visible en la página actual
+                string nombreProducto = productos[0];
+                double precioProducto = precios[0];
+                string rutaImagen = rutas[0];
+                string categoria = categorias[0];
+
+                // Obtén la cantidad seleccionada en el ComboBox correspondiente
+                int cantidadSeleccionada = Convert.ToInt32(cmbCantidadComprar1.SelectedItem ?? 1);
+
+                // Crea un nuevo objeto de carrito con los datos obtenidos
+                ProductosCarrito pedido = new ProductosCarrito(nombreProducto, categoria, precioProducto, cantidadSeleccionada, rutaImagen);
+
+                // Agrega el producto al carrito
+                Producto.caritos.Add(pedido);
+
+                // Cambia la imagen del botón del carrito para reflejar que se agregó un producto
+                picBtnCarrito.Image = Properties.Resources.carritoDeCompras__1_;
+
+                MessageBox.Show($"Producto '{nombreProducto}' agregado al carrito con éxito.");
+            }
+            else
+            {
+                MessageBox.Show("No se pudo agregar el producto al carrito. Verifica los datos.");
+            }
+        }
+        private void picBtnAgregarAlCarrito2_Click(object sender, EventArgs e)
+        {
+            // Asegúrate de que hay datos en la lista de productos temporales
+            if (productos.Count > 0 && precios.Count > 0 && rutas.Count > 0 && categorias.Count > 0)
+            {
+                // Usamos el índice 0 para el primer producto visible en la página actual
+                string nombreProducto = productos[1];
+                double precioProducto = precios[1];
+                string rutaImagen = rutas[1];
+                string categoria = categorias[1];
+
+                // Obtén la cantidad seleccionada en el ComboBox correspondiente
+                int cantidadSeleccionada = Convert.ToInt32(cmbCantidadComprar1.SelectedItem ?? 1);
+
+                // Crea un nuevo objeto de carrito con los datos obtenidos
+                ProductosCarrito pedido = new ProductosCarrito(nombreProducto, categoria, precioProducto, cantidadSeleccionada, rutaImagen);
+
+                // Agrega el producto al carrito
+                Producto.caritos.Add(pedido);
+
+                // Cambia la imagen del botón del carrito para reflejar que se agregó un producto
+                picBtnCarrito.Image = Properties.Resources.carritoDeCompras__1_;
+
+                MessageBox.Show($"Producto '{nombreProducto}' agregado al carrito con éxito.");
+            }
+            else
+            {
+                MessageBox.Show("No se pudo agregar el producto al carrito. Verifica los datos.");
+            }
+        }
+        private void picBtnAgreagarAlCarrito3_Click(object sender, EventArgs e)
+        {
+            // Asegúrate de que hay datos en la lista de productos temporales
+            if (productos.Count > 0 && precios.Count > 0 && rutas.Count > 0 && categorias.Count > 0)
+            {
+                // Usamos el índice 0 para el primer producto visible en la página actual
+                string nombreProducto = productos[2];
+                double precioProducto = precios[2];
+                string rutaImagen = rutas[2];
+                string categoria = categorias[2];
+
+                // Obtén la cantidad seleccionada en el ComboBox correspondiente
+                int cantidadSeleccionada = Convert.ToInt32(cmbCantidadComprar1.SelectedItem ?? 1);
+
+                // Crea un nuevo objeto de carrito con los datos obtenidos
+                ProductosCarrito pedido = new ProductosCarrito(nombreProducto, categoria, precioProducto, cantidadSeleccionada, rutaImagen);
+
+                // Agrega el producto al carrito
+                Producto.caritos.Add(pedido);
+
+                // Cambia la imagen del botón del carrito para reflejar que se agregó un producto
+                picBtnCarrito.Image = Properties.Resources.carritoDeCompras__1_;
+
+                MessageBox.Show($"Producto '{nombreProducto}' agregado al carrito con éxito.");
+            }
+            else
+            {
+                MessageBox.Show("No se pudo agregar el producto al carrito. Verifica los datos.");
+            }
+        }
+        private void picBtnAgregarAlCarrito4_Click(object sender, EventArgs e)
+        {
+            // Asegúrate de que hay datos en la lista de productos temporales
+            if (productos.Count > 0 && precios.Count > 0 && rutas.Count > 0 && categorias.Count > 0)
+            {
+                // Usamos el índice 0 para el primer producto visible en la página actual
+                string nombreProducto = productos[3];
+                double precioProducto = precios[3];
+                string rutaImagen = rutas[3];
+                string categoria = categorias[3];
+
+                // Obtén la cantidad seleccionada en el ComboBox correspondiente
+                int cantidadSeleccionada = Convert.ToInt32(cmbCantidadComprar1.SelectedItem ?? 1);
+
+                // Crea un nuevo objeto de carrito con los datos obtenidos
+                ProductosCarrito pedido = new ProductosCarrito(nombreProducto, categoria, precioProducto, cantidadSeleccionada, rutaImagen);
+
+                // Agrega el producto al carrito
+                Producto.caritos.Add(pedido);
+
+                // Cambia la imagen del botón del carrito para reflejar que se agregó un producto
+                picBtnCarrito.Image = Properties.Resources.carritoDeCompras__1_;
+
+                MessageBox.Show($"Producto '{nombreProducto}' agregado al carrito con éxito.");
+            }
+            else
+            {
+                MessageBox.Show("No se pudo agregar el producto al carrito. Verifica los datos.");
+            }
         }
     }
 }

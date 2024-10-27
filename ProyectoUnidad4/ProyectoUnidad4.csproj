@@ -82,6 +82,7 @@
     <Compile Include="GestionDeProductos.Designer.cs">
       <DependentUpon>GestionDeProductos.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProductosCarrito.cs" />
     <Compile Include="Reportes\IGenerarReporte.cs" />
     <Compile Include="MetodoDePago\IMetodo.cs" />
     <Compile Include="InicioAplicacion.cs">
@@ -215,6 +216,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\lupaBuscar %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carritoDeCompras %283%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

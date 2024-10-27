@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ProyectoUnidad4
 {
-    public class ProductoAlimentario : Producto
+    internal class ProductosCarrito :Producto
     {
-        public ProductoAlimentario(string nombre, string categoria, double precio, int cantidad, string imagen) : base(nombre,categoria, precio, cantidad, imagen)
+        public ProductosCarrito(string nombre, string categoria, double precio, int cantidad, string imagen) : base(nombre, categoria, precio, cantidad, imagen)
         {
             Nombre = nombre; Categoria = categoria; Precio = precio; CantidadEnInventario = cantidad; RutaImagen = imagen;
         }
@@ -18,7 +18,7 @@ namespace ProyectoUnidad4
         }
         public override double CalcularPrecioConImpuesto()
         {
-            return Precio = Precio + (Precio*0.03);
+            return Precio = Precio + (Precio * 0.1);
         }
     }
 }

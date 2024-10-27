@@ -12,13 +12,13 @@ namespace ProyectoUnidad4
         {
             Nombre = nombre; Categoria = categoria; Precio = precio; CantidadEnInventario = cantidad; RutaImagen = imagen;
         }
-        public override void AplicarDescuento()
+        public override double AplicarDescuento()
         {
             throw new NotImplementedException();
         }
-        public override void CalcularPrecioConImpuesto()
+        public override double CalcularPrecioConImpuesto()
         {
-            throw new NotImplementedException();
+            return Precio = Precio + (Precio * 0.1);
         }
     }
 }

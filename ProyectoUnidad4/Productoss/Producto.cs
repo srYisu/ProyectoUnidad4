@@ -9,6 +9,8 @@ namespace ProyectoUnidad4
     public abstract class Producto
     {
         public static List<Producto> productos = new List<Producto>();
+
+        public static List<Producto> caritos = new List<Producto>();
         public string Nombre { get; set; }
         public double Precio { get; set; }
         public int CantidadEnInventario { get; set; }
@@ -18,7 +20,7 @@ namespace ProyectoUnidad4
         {
             Nombre = nombre; Categoria = categoria; Precio = precio; CantidadEnInventario = cantidad; RutaImagen = imagen;
         }
-        public abstract void CalcularPrecioConImpuesto();
-        public abstract void AplicarDescuento();
+        public abstract double CalcularPrecioConImpuesto();
+        public abstract double AplicarDescuento();
     }
 }

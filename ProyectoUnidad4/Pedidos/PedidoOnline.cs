@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace ProyectoUnidad4
 {
-    public abstract class PedidoOnline : Pedido
+    public class PedidoOnline : Pedido
     {
+        
     }
 }

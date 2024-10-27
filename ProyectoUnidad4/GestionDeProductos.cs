@@ -59,9 +59,7 @@ namespace ProyectoUnidad4
                     producto.Precio,
                     producto.CantidadEnInventario
                     );
-            }
-
-            
+            }   
         }
 
         private void GestionDeProductos_Load(object sender, EventArgs e)
@@ -85,6 +83,7 @@ namespace ProyectoUnidad4
             if (ofd.ShowDialog() == DialogResult.OK)
             {
                 rutaArchivo = ofd.FileName;
+                lblArchivoSeleccionado.Text = rutaArchivo;
             }
         }
 

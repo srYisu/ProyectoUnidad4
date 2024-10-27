@@ -103,6 +103,16 @@ namespace ProyectoUnidad4.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap carritoDeCompras__3_ {
+            get {
+                object obj = ResourceManager.GetObject("carritoDeCompras (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap carritoFlecha {
             get {
                 object obj = ResourceManager.GetObject("carritoFlecha", resourceCulture);
