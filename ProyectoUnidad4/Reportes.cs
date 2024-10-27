@@ -18,6 +18,7 @@ namespace ProyectoUnidad4
             ConfigurarTablaInventario();
             ConfigurarTablaVentas();
             CargarTablaVentas();
+            CargarTablaInventario();
             // Agregar columnas a los DataGridView
             dgvInventarioo.Columns.Add("Prueba2", "Prueba2");
             dgvClientes.Columns.Add("Prueba3", "Prueba3");
@@ -47,6 +48,24 @@ namespace ProyectoUnidad4
                     );
             }
         }
+        public void CargarTablaInventario()
+        {
+            ReporteInventario invt = new ReporteInventario();
+            ReporteInventario.inventario.Clear();
+            invt.Generar();
+            foreach(var inv in ReporteInventario.inventario)
+            {
+                Image img = Image.FromFile(inv.RutaImagen);
+                dgvInventarioo.Rows.Add(
+                    img,
+                    inv.Nombre,
+                    inv.Categoria,
+                    inv.Precio,
+                    inv.CantidadEnInventario
+                    );
+            }
+        }
+
         private void ConfigurarTablaVentas()
         {
             //agregar imagen a la columna

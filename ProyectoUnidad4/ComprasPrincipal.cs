@@ -32,6 +32,7 @@ namespace ProyectoUnidad4
                 picBtnCarrito.Image = Properties.Resources.carritoDeCompras__1_;
             }
         }
+
         int inicio = 0;
         int tamano = 4;
 
