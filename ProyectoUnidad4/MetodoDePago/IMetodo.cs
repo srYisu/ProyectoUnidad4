@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProyectoUnidad4
 {
-    internal interface IMetodo
+    public interface IMetodo
     {
         void ProcesarPago();
     }

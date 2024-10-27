@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProyectoUnidad4
 {
-    internal abstract class Pedido
+    public abstract class Pedido
     {
 
     }

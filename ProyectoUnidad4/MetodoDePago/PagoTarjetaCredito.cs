@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProyectoUnidad4
 {
-    internal class PagoTarjetaCredito : IMetodo
+    public class PagoTarjetaCredito : IMetodo
     {
         public void ProcesarPago()
         {
