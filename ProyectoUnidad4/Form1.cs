@@ -7,11 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using System.Configuration;
+using System.Collections.Generic;
 
 namespace ProyectoUnidad4
 {
     public partial class Form1 : Form
     {
+        public static string correoooo;
         Panel invisiblePanel = new Panel();
         private string password = "Contraseña";
         private string user = "Usuario";
@@ -81,7 +85,7 @@ namespace ProyectoUnidad4
 
             }
         }
-
+        private static string archivoUsuarios = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "usuarios.txt");
         private void btnInicarSesion_Click(object sender, EventArgs e)
         {
             string usuario = "asereje";
@@ -89,9 +93,30 @@ namespace ProyectoUnidad4
             if (txtUsuarioReal.Text == usuario && txtContrasenaReal.Text == contrasena)
             {
                 Dashboard dashboard = new Dashboard();
-                this.Visible = false;
+                this.Close();
                 dashboard.Show();
             }
+            //verifica si existe el archivo
+            if (File.Exists(archivoUsuarios))
+            {
+                var lineas = File.ReadAllLines(archivoUsuarios);
+                foreach (var linea in lineas)
+                {   //lee las lineas del txt y checa los elemtos que estan separados por ,
+                    var datos = linea.Split(',');
+                    string usuarioInicio = datos[0];
+                    string correo = datos[1];
+                    string contraseña = datos[2];
+                    //verifica si los datos ingresados son correctos
+                    if ((txtUsuarioReal.Text == usuarioInicio || txtUsuarioReal.Text==correo) && contraseña == txtContrasenaReal.Text)
+                    {
+                        correoooo = correo;
+                        ComprasPrincipal principal = new ComprasPrincipal();
+                        principal.Show();
+                        this.Close();
+                    }
+                }
+            }
+
         }
 
         private void tgsMostrarContraseña_CheckedChanged(object sender, EventArgs e)
@@ -115,6 +140,24 @@ namespace ProyectoUnidad4
 
         private void btnInciarSesionReal_Click(object sender, EventArgs e)
         {
+
+        }
+
+        public void GuardarUsuario()
+        {
+            string rutaArchivo = "usuario.txt"; // Asegúrate de que esté en el mismo directorio que el ejecutable
+            using (StreamWriter writer = new StreamWriter(rutaArchivo, true)) // 'true' para agregar
+            {
+                writer.WriteLine("arriba las twice"); // Guarda el usuario en formato CSV
+            }
+        }
+        private void lblCrearCuenta_Click(object sender, EventArgs e)
+        {
+            CrearCuenta crear = new CrearCuenta();
+            this.Visible = false;
+            crear.Show();
+            //File.WriteAllText("usuario.txt", "asereje2");
+           
 
         }
     }

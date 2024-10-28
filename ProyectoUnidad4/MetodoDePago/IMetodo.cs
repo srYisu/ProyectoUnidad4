@@ -9,6 +9,6 @@ namespace ProyectoUnidad4
     public interface IMetodo
     {
 
-        void ProcesarPago(string pais, string nombre, int telefono, int postal, string estado, string municipo, string direccion, double total, string entrega);
+        void ProcesarPago(string pais, string nombre, int telefono, int postal, string estado, string municipo, string direccion, double total, string entrega, string correo);
     }
 }

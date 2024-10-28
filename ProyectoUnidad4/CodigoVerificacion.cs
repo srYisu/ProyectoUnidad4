@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace ProyectoUnidad4
 {
-    public class PagoEfectivon: IMetodo
+    internal class CodigoVerificacion
     {
         public static bool borrar { get; set; }
         private string myEmai = "chetosflaminconsalsa@gmail.com";
@@ -19,16 +19,19 @@ namespace ProyectoUnidad4
         private string myAlias = "ÑemuCorp";
         private string[] myAdjuntops;
         private MailMessage mCorreo;
-        public void ProcesarPago(string pais, string nombre, int telefono, int postal, string estado, string municipo, string direccion, double total, string entrega, string correo)
+        public static int Codigo { get; set; }
+        public void CodigoDeVerificación(string usuario, string correo, string contrasena)
         {
+            Random rand = new Random();
+            Codigo = rand.Next(100000, 1000000);
+
             mCorreo = new MailMessage();
             borrar = false;
             mCorreo.From = new MailAddress(myEmai, myAlias, System.Text.Encoding.UTF8);
             mCorreo.To.Add(correo.Trim());
-            mCorreo.Subject = "Pago procesado".Trim();
+            mCorreo.Subject = "Codigo de verificación para ÑEMU".Trim();
             mCorreo.IsBodyHtml = true;
-            mCorreo.Body = $"Su pedido de ${total} ha sido procesado exitosamente.<br/>Metodo de pago: Efectivo <br/> <br/>Datos personales <br/>Nombre: {nombre}." +
-                $"Telefono: {telefono} <br/>{pais} {estado} {municipo} <br/>{direccion} <br/>Para destino en {entrega}. ".Trim();
+            mCorreo.Body = $"{Codigo} <br/>NO COMPARTA ESTE CODIGO CON NADIE".Trim();
             mCorreo.Priority = MailPriority.High;
 
             try
@@ -44,7 +47,7 @@ namespace ProyectoUnidad4
                 borrar = true;
                 smtp.EnableSsl = true;
                 smtp.Send(mCorreo);
-                MessageBox.Show("Transacción finalizada");
+                MessageBox.Show("Codigo de verificación enviado al correo");
                 int restante;
                 foreach (var producto in Producto.productos)
                 {
@@ -65,5 +68,8 @@ namespace ProyectoUnidad4
             {
                 MessageBox.Show(ex.Message);
             }
-        }   }
+
+        }
+        
+    }
 }

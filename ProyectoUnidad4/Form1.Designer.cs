@@ -42,6 +42,7 @@
             this.txtContrasena = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtUsuario = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnInicarSesion = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.lblCrearCuenta = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.guna2CustomGradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -73,7 +74,7 @@
             this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(190)))), ((int)(((byte)(231)))));
             this.guna2ControlBox1.IconColor = System.Drawing.Color.Gray;
             this.guna2ControlBox1.Location = new System.Drawing.Point(659, 5);
-            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(60, 36);
             this.guna2ControlBox1.TabIndex = 6;
@@ -83,12 +84,13 @@
             this.guna2CustomGradientPanel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2CustomGradientPanel2.BorderRadius = 30;
             this.guna2CustomGradientPanel2.BorderThickness = 1;
+            this.guna2CustomGradientPanel2.Controls.Add(this.lblCrearCuenta);
             this.guna2CustomGradientPanel2.Controls.Add(this.tgsMostrarContraseña1);
             this.guna2CustomGradientPanel2.Controls.Add(this.btnInciarSesionReal);
             this.guna2CustomGradientPanel2.Controls.Add(this.txtContrasenaReal);
             this.guna2CustomGradientPanel2.Controls.Add(this.txtUsuarioReal);
             this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(101, 283);
-            this.guna2CustomGradientPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2CustomGradientPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
             this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(323, 431);
             this.guna2CustomGradientPanel2.TabIndex = 0;
@@ -333,6 +335,16 @@
             this.btnInicarSesion.UseTransparentBackground = true;
             this.btnInicarSesion.Click += new System.EventHandler(this.btnInicarSesion_Click);
             // 
+            // lblCrearCuenta
+            // 
+            this.lblCrearCuenta.BackColor = System.Drawing.Color.Transparent;
+            this.lblCrearCuenta.Location = new System.Drawing.Point(113, 349);
+            this.lblCrearCuenta.Name = "lblCrearCuenta";
+            this.lblCrearCuenta.Size = new System.Drawing.Size(100, 18);
+            this.lblCrearCuenta.TabIndex = 4;
+            this.lblCrearCuenta.Text = "<u> Cree una cuenta <u>";
+            this.lblCrearCuenta.Click += new System.EventHandler(this.lblCrearCuenta_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -347,6 +359,7 @@
             this.guna2CustomGradientPanel1.ResumeLayout(false);
             this.guna2CustomGradientPanel1.PerformLayout();
             this.guna2CustomGradientPanel2.ResumeLayout(false);
+            this.guna2CustomGradientPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -368,6 +381,7 @@
         private Guna.UI2.WinForms.Guna2TextBox txtUsuarioReal;
         private Guna.UI2.WinForms.Guna2ToggleSwitch tgsMostrarContraseña1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblCrearCuenta;
     }
 }
 

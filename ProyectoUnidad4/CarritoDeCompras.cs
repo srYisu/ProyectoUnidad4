@@ -18,7 +18,12 @@ namespace ProyectoUnidad4
             ConfigurarTabla();
             CargarProductosCarrito();
             CalcularTotal();
+
             dgvCarritoDeCompras.RowHeadersVisible = false; // Eliminar primera columna vacía
+            dgvCarritoDeCompras.AllowUserToAddRows = false;
+            dgvCarritoDeCompras.AllowUserToResizeColumns = false;
+            dgvCarritoDeCompras.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgvCarritoDeCompras.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
         }
         public static string entrega;
         public static double totalProductos;
@@ -41,7 +46,7 @@ namespace ProyectoUnidad4
             DataGridViewImageColumn btnEliminar = new DataGridViewImageColumn();
             btnEliminar.HeaderText = "Eliminar";
             btnEliminar.Name = "btnEliminar";
-            btnEliminar.ImageLayout = DataGridViewImageCellLayout.Zoom;
+            btnEliminar.ImageLayout = DataGridViewImageCellLayout.Zoom;//esto es pq lo hice con magen
             btnEliminar.Image = Properties.Resources.carritoDeCompras__3_;
             dgvCarritoDeCompras.Columns.Add(btnEliminar);
         }

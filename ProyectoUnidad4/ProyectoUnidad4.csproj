@@ -58,11 +58,24 @@
     <Compile Include="CarritoDeCompras.Designer.cs">
       <DependentUpon>CarritoDeCompras.cs</DependentUpon>
     </Compile>
+    <Compile Include="CodigoConfirmacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CodigoConfirmacion.Designer.cs">
+      <DependentUpon>CodigoConfirmacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CodigoVerificacion.cs" />
     <Compile Include="ComprasPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ComprasPrincipal.Designer.cs">
       <DependentUpon>ComprasPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrearCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearCuenta.Designer.cs">
+      <DependentUpon>CrearCuenta.cs</DependentUpon>
     </Compile>
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
@@ -121,8 +134,14 @@
     <EmbeddedResource Include="CarritoDeCompras.resx">
       <DependentUpon>CarritoDeCompras.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CodigoConfirmacion.resx">
+      <DependentUpon>CodigoConfirmacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ComprasPrincipal.resx">
       <DependentUpon>ComprasPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrearCuenta.resx">
+      <DependentUpon>CrearCuenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
@@ -228,6 +247,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\carritoDeCompras %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="usuariosAca\Ususarioss.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

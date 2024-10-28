@@ -20,6 +20,10 @@ namespace ProyectoUnidad4
             ConfigurarTabla();
             CargarComboBox();
             CargarDataGridView();
+            dgvProductos.AllowUserToAddRows = false;
+            dgvProductos.AllowUserToResizeColumns = false;
+            dgvProductos.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgvProductos.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
         }
         
         private void ConfigurarTabla()
@@ -36,6 +40,21 @@ namespace ProyectoUnidad4
             dgvProductos.Columns.Add("Categoria", "Categoria");
             dgvProductos.Columns.Add("Precio", "Precio");
             dgvProductos.Columns.Add("Cantidad", "Cantidad");
+            // Columna para Editar
+            DataGridViewButtonColumn btnEditar = new DataGridViewButtonColumn();
+            btnEditar.HeaderText = "Editar";
+            btnEditar.Name = "btnEditar";
+            btnEditar.Text = "Editar";
+            btnEditar.UseColumnTextForButtonValue = true;
+            dgvProductos.Columns.Add(btnEditar);
+
+            // Columna para Eliminar
+            DataGridViewButtonColumn btnEliminar = new DataGridViewButtonColumn();
+            btnEliminar.HeaderText = "Eliminar";
+            btnEliminar.Name = "btnEliminar";
+            btnEliminar.Text = "Eliminar";
+            btnEliminar.UseColumnTextForButtonValue = true;
+            dgvProductos.Columns.Add(btnEliminar);
         }
 
         private void CargarComboBox()

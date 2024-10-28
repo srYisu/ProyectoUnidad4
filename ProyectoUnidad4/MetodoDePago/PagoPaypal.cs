@@ -19,12 +19,12 @@ namespace ProyectoUnidad4
         private string myAlias = "ÑemuCorp";
         private string[] myAdjuntops;
         private MailMessage mCorreo;
-        public void ProcesarPago(string pais, string nombre, int telefono, int postal, string estado, string municipo, string direccion, double total, string entrega)
+        public void ProcesarPago(string pais, string nombre, int telefono, int postal, string estado, string municipo, string direccion, double total, string entrega, string correo)
         {
             mCorreo = new MailMessage();
             borrar = false;
             mCorreo.From = new MailAddress(myEmai, myAlias, System.Text.Encoding.UTF8);
-            mCorreo.To.Add("sr.elyisus@gmail.com".Trim());
+            mCorreo.To.Add(correo.Trim());
             mCorreo.Subject = "Pago procesado".Trim();
             mCorreo.IsBodyHtml = true;
             mCorreo.Body = $"Su pedido de ${total} ha sido procesado exitosamente.<br/>Metodo de pago: PayPal <br/> <br/>Datos personales <br/>Nombre: {nombre}." +
