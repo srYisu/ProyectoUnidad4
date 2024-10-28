@@ -143,6 +143,16 @@ namespace ProyectoUnidad4.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap comprasCarritoLogo {
+            get {
+                object obj = ResourceManager.GetObject("comprasCarritoLogo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap DiaMuertos__3_ {
             get {
                 object obj = ResourceManager.GetObject("DiaMuertos (3)", resourceCulture);
@@ -256,6 +266,16 @@ namespace ProyectoUnidad4.Properties {
         internal static System.Drawing.Bitmap ÑemuFinal__2_ {
             get {
                 object obj = ResourceManager.GetObject("ÑemuFinal (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tgestion {
+            get {
+                object obj = ResourceManager.GetObject("tgestion", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -8,12 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
 namespace ProyectoUnidad4
 {
     public partial class GestionDeProductos : Form
     {
         string rutaArchivo;
+        private Producto productoTemporal = null;
         public GestionDeProductos()
         {
             InitializeComponent();
@@ -80,7 +82,40 @@ namespace ProyectoUnidad4
                     );
             }   
         }
+        int indiceProductoActual;
+        private void dgvProductos_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == dgvProductos.Columns["btnEditar"].Index && e.RowIndex >= 0)
+            {
+                // Obtén el producto seleccionado desde la lista de productos
+                Producto productoSeleccionado = Producto.productos[e.RowIndex];
 
+                // Carga los valores en los controles para su edición
+                txtNombre.Text = productoSeleccionado.Nombre;
+                txtCantidad.Text = productoSeleccionado.CantidadEnInventario.ToString();
+                txtPrecio.Text = productoSeleccionado.Precio.ToString();
+                cmbCategoria.SelectedItem = productoSeleccionado.Categoria;
+
+                // Guarda el índice del producto que estamos editando
+                indiceProductoActual = e.RowIndex;
+            }
+            if (e.ColumnIndex == dgvProductos.Columns["btnEliminar"].Index && e.RowIndex >= 0)
+            {
+                EliminarProducto(e.RowIndex);
+            }
+        }
+        private void EliminarProducto(int index)
+        {
+            Producto.productos.RemoveAt(index);
+            CargarDataGridView();
+        }
+        private void LimpiarCampos()
+        {
+            txtCantidad.Text = "";
+            txtNombre.Text = "";
+            txtPrecio.Text = "";
+            cmbCategoria.SelectedIndex = 0;
+        }
         private void GestionDeProductos_Load(object sender, EventArgs e)
         {
             CargarDataGridView();
@@ -105,49 +140,60 @@ namespace ProyectoUnidad4
                 lblArchivoSeleccionado.Text = rutaArchivo;
             }
         }
-
+        
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtNombre.Text) || string.IsNullOrWhiteSpace(txtCantidad.Text) || string.IsNullOrWhiteSpace(txtPrecio.Text) ||
-                cmbCategoria.SelectedIndex == -1 || cmbCategoria.SelectedItem == null)
+            if (string.IsNullOrWhiteSpace(txtNombre.Text) || string.IsNullOrWhiteSpace(txtCantidad.Text) ||
+       string.IsNullOrWhiteSpace(txtPrecio.Text) || cmbCategoria.SelectedIndex == -1)
             {
                 MessageBox.Show("Por favor, completa todos los datos", "Advertencia");
                 return;
             }
-            Producto producto = null;
-            string categoria= cmbCategoria.SelectedItem.ToString();
-            switch (categoria)
+
+            string categoria = cmbCategoria.SelectedItem.ToString();
+            Producto producto;
+
+            // Crear o editar producto según el valor de indiceProductoActual
+            if (indiceProductoActual >= 0 && indiceProductoActual < Producto.productos.Count)  // Estamos editando un producto existente
             {
-                case "Alimentario":
-                    producto = new ProductoAlimentario(
-                        txtNombre.Text,
-                        categoria,
-                        Convert.ToDouble(txtPrecio.Text),
-                        Convert.ToInt32(txtCantidad.Text),
-                        rutaArchivo
-                        );
-                    break;
-
-                case "Electrónico":
-                    producto = new ProductoElectronico(
-                        txtNombre.Text,
-                        categoria,
-                        Convert.ToDouble(txtPrecio.Text),
-                        Convert.ToInt32(txtCantidad.Text),
-                        rutaArchivo);
-                    break;
-
-                case "Ropa":
-                    producto = new ProductoRopa(
-                        txtNombre.Text,
-                        categoria,
-                        Convert.ToDouble(txtPrecio.Text),
-                        Convert.ToInt32(txtCantidad.Text),
-                        rutaArchivo);
-                    break;
+                // Editar los valores del producto existente en la lista
+                producto = Producto.productos[indiceProductoActual];
+                producto.Nombre = txtNombre.Text;
+                producto.Categoria = categoria;
+                producto.Precio = Convert.ToDouble(txtPrecio.Text);
+                producto.CantidadEnInventario = Convert.ToInt32(txtCantidad.Text);
             }
-            Producto.productos.Add(producto);
+            else  // Es un nuevo producto, agregarlo a la lista
+            {
+                // Crear un nuevo producto basado en la categoría seleccionada
+                switch (categoria)
+                {
+                    case "Alimentario":
+                        producto = new ProductoAlimentario(txtNombre.Text, categoria, Convert.ToDouble(txtPrecio.Text),
+                                                           Convert.ToInt32(txtCantidad.Text), rutaArchivo);
+                        break;
+                    case "Electrónico":
+                        producto = new ProductoElectronico(txtNombre.Text, categoria, Convert.ToDouble(txtPrecio.Text),
+                                                           Convert.ToInt32(txtCantidad.Text), rutaArchivo);
+                        break;
+                    case "Ropa":
+                        producto = new ProductoRopa(txtNombre.Text, categoria, Convert.ToDouble(txtPrecio.Text),
+                                                    Convert.ToInt32(txtCantidad.Text), rutaArchivo);
+                        break;
+                    default:
+                        return;
+                }
+                // Agregar el nuevo producto a la lista
+                Producto.productos.Add(producto);
+            }
+
+            // Resetear el índice después de guardar los cambios
+            indiceProductoActual = -1;
+
+            // Limpiar los campos y recargar el DataGridView
+            LimpiarCampos();
             CargarDataGridView();
         }
+        
     }
 }

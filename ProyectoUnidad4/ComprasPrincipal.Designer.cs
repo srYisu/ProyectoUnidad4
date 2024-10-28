@@ -250,36 +250,40 @@
             // lblProducto4
             // 
             this.lblProducto4.AutoSize = true;
+            this.lblProducto4.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.lblProducto4.Location = new System.Drawing.Point(648, 841);
             this.lblProducto4.Name = "lblProducto4";
-            this.lblProducto4.Size = new System.Drawing.Size(61, 16);
+            this.lblProducto4.Size = new System.Drawing.Size(80, 23);
             this.lblProducto4.TabIndex = 39;
             this.lblProducto4.Text = "Producto";
             // 
             // lblProducto3
             // 
             this.lblProducto3.AutoSize = true;
+            this.lblProducto3.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.lblProducto3.Location = new System.Drawing.Point(144, 841);
             this.lblProducto3.Name = "lblProducto3";
-            this.lblProducto3.Size = new System.Drawing.Size(61, 16);
+            this.lblProducto3.Size = new System.Drawing.Size(80, 23);
             this.lblProducto3.TabIndex = 38;
             this.lblProducto3.Text = "Producto";
             // 
             // lblProducto2
             // 
             this.lblProducto2.AutoSize = true;
+            this.lblProducto2.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.lblProducto2.Location = new System.Drawing.Point(646, 518);
             this.lblProducto2.Name = "lblProducto2";
-            this.lblProducto2.Size = new System.Drawing.Size(61, 16);
+            this.lblProducto2.Size = new System.Drawing.Size(80, 23);
             this.lblProducto2.TabIndex = 37;
             this.lblProducto2.Text = "Producto";
             // 
             // lblProducto1
             // 
             this.lblProducto1.AutoSize = true;
+            this.lblProducto1.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.lblProducto1.Location = new System.Drawing.Point(144, 518);
             this.lblProducto1.Name = "lblProducto1";
-            this.lblProducto1.Size = new System.Drawing.Size(61, 16);
+            this.lblProducto1.Size = new System.Drawing.Size(80, 23);
             this.lblProducto1.TabIndex = 36;
             this.lblProducto1.Text = "Producto";
             // 
@@ -289,11 +293,12 @@
             this.btnSiguientePag.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSiguientePag.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSiguientePag.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSiguientePag.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSiguientePag.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(55)))), ((int)(((byte)(166)))));
+            this.btnSiguientePag.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.btnSiguientePag.ForeColor = System.Drawing.Color.White;
             this.btnSiguientePag.Location = new System.Drawing.Point(475, 956);
             this.btnSiguientePag.Name = "btnSiguientePag";
-            this.btnSiguientePag.Size = new System.Drawing.Size(97, 28);
+            this.btnSiguientePag.Size = new System.Drawing.Size(103, 28);
             this.btnSiguientePag.TabIndex = 35;
             this.btnSiguientePag.Text = "Siguiente";
             this.btnSiguientePag.Click += new System.EventHandler(this.btnSiguientePag_Click);
@@ -304,7 +309,8 @@
             this.btnAnteriorPag.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnAnteriorPag.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnAnteriorPag.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAnteriorPag.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnAnteriorPag.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(55)))), ((int)(((byte)(166)))));
+            this.btnAnteriorPag.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.btnAnteriorPag.ForeColor = System.Drawing.Color.White;
             this.btnAnteriorPag.Location = new System.Drawing.Point(311, 956);
             this.btnAnteriorPag.Name = "btnAnteriorPag";
@@ -367,33 +373,36 @@
             "5"});
             this.cmbCantidadCompra4.Location = new System.Drawing.Point(649, 895);
             this.cmbCantidadCompra4.Name = "cmbCantidadCompra4";
-            this.cmbCantidadCompra4.Size = new System.Drawing.Size(103, 36);
+            this.cmbCantidadCompra4.Size = new System.Drawing.Size(112, 36);
             this.cmbCantidadCompra4.TabIndex = 30;
             // 
             // lblCantdiad4
             // 
             this.lblCantdiad4.AutoSize = true;
+            this.lblCantdiad4.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.lblCantdiad4.Location = new System.Drawing.Point(570, 895);
             this.lblCantdiad4.Name = "lblCantdiad4";
-            this.lblCantdiad4.Size = new System.Drawing.Size(61, 16);
+            this.lblCantdiad4.Size = new System.Drawing.Size(79, 23);
             this.lblCantdiad4.TabIndex = 29;
             this.lblCantdiad4.Text = "Cantidad";
             // 
             // lblPrecioProducto4
             // 
             this.lblPrecioProducto4.AutoSize = true;
+            this.lblPrecioProducto4.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.lblPrecioProducto4.Location = new System.Drawing.Point(634, 863);
             this.lblPrecioProducto4.Name = "lblPrecioProducto4";
-            this.lblPrecioProducto4.Size = new System.Drawing.Size(14, 16);
+            this.lblPrecioProducto4.Size = new System.Drawing.Size(19, 23);
             this.lblPrecioProducto4.TabIndex = 28;
             this.lblPrecioProducto4.Text = "$";
             // 
             // lblPrecio4
             // 
             this.lblPrecio4.AutoSize = true;
+            this.lblPrecio4.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.lblPrecio4.Location = new System.Drawing.Point(570, 863);
             this.lblPrecio4.Name = "lblPrecio4";
-            this.lblPrecio4.Size = new System.Drawing.Size(49, 16);
+            this.lblPrecio4.Size = new System.Drawing.Size(61, 23);
             this.lblPrecio4.TabIndex = 27;
             this.lblPrecio4.Text = "Precio:";
             // 
@@ -446,27 +455,30 @@
             // lblCantidad2
             // 
             this.lblCantidad2.AutoSize = true;
+            this.lblCantidad2.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.lblCantidad2.Location = new System.Drawing.Point(568, 581);
             this.lblCantidad2.Name = "lblCantidad2";
-            this.lblCantidad2.Size = new System.Drawing.Size(61, 16);
+            this.lblCantidad2.Size = new System.Drawing.Size(79, 23);
             this.lblCantidad2.TabIndex = 23;
             this.lblCantidad2.Text = "Cantidad";
             // 
             // lblPrecioProducto2
             // 
             this.lblPrecioProducto2.AutoSize = true;
+            this.lblPrecioProducto2.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.lblPrecioProducto2.Location = new System.Drawing.Point(632, 550);
             this.lblPrecioProducto2.Name = "lblPrecioProducto2";
-            this.lblPrecioProducto2.Size = new System.Drawing.Size(14, 16);
+            this.lblPrecioProducto2.Size = new System.Drawing.Size(19, 23);
             this.lblPrecioProducto2.TabIndex = 22;
             this.lblPrecioProducto2.Text = "$";
             // 
             // lblPrecio2
             // 
             this.lblPrecio2.AutoSize = true;
+            this.lblPrecio2.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.lblPrecio2.Location = new System.Drawing.Point(568, 550);
             this.lblPrecio2.Name = "lblPrecio2";
-            this.lblPrecio2.Size = new System.Drawing.Size(49, 16);
+            this.lblPrecio2.Size = new System.Drawing.Size(61, 23);
             this.lblPrecio2.TabIndex = 21;
             this.lblPrecio2.Text = "Precio:";
             // 
@@ -519,27 +531,30 @@
             // lblCantidad3
             // 
             this.lblCantidad3.AutoSize = true;
+            this.lblCantidad3.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.lblCantidad3.Location = new System.Drawing.Point(76, 895);
             this.lblCantidad3.Name = "lblCantidad3";
-            this.lblCantidad3.Size = new System.Drawing.Size(61, 16);
+            this.lblCantidad3.Size = new System.Drawing.Size(79, 23);
             this.lblCantidad3.TabIndex = 17;
             this.lblCantidad3.Text = "Cantidad";
             // 
             // lblPrecioProducto3
             // 
             this.lblPrecioProducto3.AutoSize = true;
+            this.lblPrecioProducto3.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.lblPrecioProducto3.Location = new System.Drawing.Point(144, 861);
             this.lblPrecioProducto3.Name = "lblPrecioProducto3";
-            this.lblPrecioProducto3.Size = new System.Drawing.Size(14, 16);
+            this.lblPrecioProducto3.Size = new System.Drawing.Size(19, 23);
             this.lblPrecioProducto3.TabIndex = 16;
             this.lblPrecioProducto3.Text = "$";
             // 
             // lblPrecio3
             // 
             this.lblPrecio3.AutoSize = true;
+            this.lblPrecio3.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.lblPrecio3.Location = new System.Drawing.Point(80, 861);
             this.lblPrecio3.Name = "lblPrecio3";
-            this.lblPrecio3.Size = new System.Drawing.Size(49, 16);
+            this.lblPrecio3.Size = new System.Drawing.Size(61, 23);
             this.lblPrecio3.TabIndex = 15;
             this.lblPrecio3.Text = "Precio:";
             // 
@@ -592,27 +607,30 @@
             // lblCantidad1
             // 
             this.lblCantidad1.AutoSize = true;
-            this.lblCantidad1.Location = new System.Drawing.Point(80, 581);
+            this.lblCantidad1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblCantidad1.Location = new System.Drawing.Point(66, 581);
             this.lblCantidad1.Name = "lblCantidad1";
-            this.lblCantidad1.Size = new System.Drawing.Size(61, 16);
+            this.lblCantidad1.Size = new System.Drawing.Size(79, 23);
             this.lblCantidad1.TabIndex = 6;
             this.lblCantidad1.Text = "Cantidad";
             // 
             // lblPrecioProducto1
             // 
             this.lblPrecioProducto1.AutoSize = true;
-            this.lblPrecioProducto1.Location = new System.Drawing.Point(144, 550);
+            this.lblPrecioProducto1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblPrecioProducto1.Location = new System.Drawing.Point(143, 550);
             this.lblPrecioProducto1.Name = "lblPrecioProducto1";
-            this.lblPrecioProducto1.Size = new System.Drawing.Size(14, 16);
+            this.lblPrecioProducto1.Size = new System.Drawing.Size(19, 23);
             this.lblPrecioProducto1.TabIndex = 5;
             this.lblPrecioProducto1.Text = "$";
             // 
             // lblPrecio1
             // 
             this.lblPrecio1.AutoSize = true;
-            this.lblPrecio1.Location = new System.Drawing.Point(80, 550);
+            this.lblPrecio1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblPrecio1.Location = new System.Drawing.Point(66, 550);
             this.lblPrecio1.Name = "lblPrecio1";
-            this.lblPrecio1.Size = new System.Drawing.Size(49, 16);
+            this.lblPrecio1.Size = new System.Drawing.Size(61, 23);
             this.lblPrecio1.TabIndex = 4;
             this.lblPrecio1.Text = "Precio:";
             // 

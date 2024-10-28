@@ -249,6 +249,8 @@
     <None Include="Resources\carritoDeCompras %283%29.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\comprasCarritoLogo.png" />
+    <None Include="Resources\tgestion.png" />
     <Content Include="usuariosAca\Ususarioss.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

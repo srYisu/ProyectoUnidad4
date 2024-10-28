@@ -65,7 +65,6 @@ namespace ProyectoUnidad4
                     );
             }
         }
-
         private void dgvCarritoDeCompras_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             dgvCarritoDeCompras.ClearSelection();
