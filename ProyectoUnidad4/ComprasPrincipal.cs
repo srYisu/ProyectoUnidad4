@@ -49,6 +49,32 @@ namespace ProyectoUnidad4
             this.Close();
         }
 
+        private void CargarProductosFiltrados(List<Producto> productosFiltrados)
+        {
+            PictureBox[] pictureBoxes = { picProducto1, picProducto2, picProducto3, picProducto4 };
+            Label[] nombre = { lblProducto1, lblProducto2, lblProducto3, lblProducto4 };
+            Label[] precio = { lblPrecioProducto1, lblPrecioProducto2, lblPrecioProducto3, lblPrecioProducto4 };
+            ComboBox[] cantidades = { cmbCantidadComprar1, cmbCantidadCompra2, cmbCantidadCompra3, cmbCantidadCompra4 };
+
+            // Limpiar los PictureBox y Labels
+            for (int i = 0; i < pictureBoxes.Length; i++)
+            {
+                pictureBoxes[i].Image = null;
+                nombre[i].Text = "";
+                precio[i].Text = "";
+                cantidades[i].Items.Clear();
+            }
+
+            // Cargar la información de los productos filtrados
+            for (int i = 0; i < productosFiltrados.Count && i < pictureBoxes.Length; i++)
+            {
+                var producto = productosFiltrados[i];
+                pictureBoxes[i].Image = Image.FromFile(producto.RutaImagen);
+                nombre[i].Text = producto.Nombre;
+                precio[i].Text = producto.Precio.ToString("C");
+                cantidades[i].Items.Add(producto.CantidadEnInventario);
+            }
+        }
         public void cargarProductos()
         {
             //referencia a los pictureBox
@@ -91,7 +117,21 @@ namespace ProyectoUnidad4
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Asereje");
+            string textoBusqueda = txtBuscador.Text.Trim().ToLower();
+
+            // Filtrar productos cuyo nombre contenga el texto de búsqueda
+            List<Producto> productosFiltrados = Producto.productos
+                .Where(p => p.Nombre.ToLower().Contains(textoBusqueda))
+                .ToList();
+
+            if (productosFiltrados.Count == 0)
+            {
+                MessageBox.Show("No se encontraron productos que coincidan con la búsqueda.");
+                return;
+            }
+
+            // Cargar los productos filtrados en los PictureBox y Labels
+            CargarProductosFiltrados(productosFiltrados);
         }
 
         private void scbFormPrincipal_Scroll(object sender, ScrollEventArgs e)
