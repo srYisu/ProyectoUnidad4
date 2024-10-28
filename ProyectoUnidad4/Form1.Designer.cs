@@ -43,6 +43,7 @@
             this.txtContrasena = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtUsuario = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnInicarSesion = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.guna2CustomGradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -50,6 +51,7 @@
             // 
             // guna2CustomGradientPanel1
             // 
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2ControlBox2);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2ControlBox1);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2CustomGradientPanel2);
             this.guna2CustomGradientPanel1.Controls.Add(this.lblCreeAqui);
@@ -92,6 +94,7 @@
             this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
             this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(242, 350);
             this.guna2CustomGradientPanel2.TabIndex = 0;
+            this.guna2CustomGradientPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2CustomGradientPanel2_Paint);
             // 
             // lblCrearCuenta
             // 
@@ -145,7 +148,7 @@
             this.btnInciarSesionReal.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnInciarSesionReal.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(31)))), ((int)(((byte)(162)))));
             this.btnInciarSesionReal.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(39)))), ((int)(((byte)(176)))));
-            this.btnInciarSesionReal.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnInciarSesionReal.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInciarSesionReal.ForeColor = System.Drawing.Color.White;
             this.btnInciarSesionReal.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.btnInciarSesionReal.Location = new System.Drawing.Point(61, 210);
@@ -342,6 +345,16 @@
             this.btnInicarSesion.UseTransparentBackground = true;
             this.btnInicarSesion.Click += new System.EventHandler(this.btnInicarSesion_Click);
             // 
+            // guna2ControlBox2
+            // 
+            this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
+            this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox2.Location = new System.Drawing.Point(496, 3);
+            this.guna2ControlBox2.Name = "guna2ControlBox2";
+            this.guna2ControlBox2.Size = new System.Drawing.Size(45, 29);
+            this.guna2ControlBox2.TabIndex = 7;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -379,6 +392,7 @@
         private Guna.UI2.WinForms.Guna2ToggleSwitch tgsMostrarContraseña1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblCrearCuenta;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
     }
 }
 

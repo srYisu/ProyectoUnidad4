@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Configuration;
-using System.Collections.Generic;
+
 
 namespace ProyectoUnidad4
 {
@@ -158,6 +158,11 @@ namespace ProyectoUnidad4
             crear.Show();
             //File.WriteAllText("usuario.txt", "asereje2");
            
+
+        }
+
+        private void guna2CustomGradientPanel2_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }

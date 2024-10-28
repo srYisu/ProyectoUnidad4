@@ -256,6 +256,7 @@
     <None Include="Resources\Dashboard.png" />
     <None Include="Resources\CuentaImagen.png" />
     <None Include="Resources\ConfirmarImagen.png" />
+    <None Include="Resources\ReportesImagen.png" />
     <Content Include="usuariosAca\Ususarioss.txt" />
   </ItemGroup>
   <ItemGroup />

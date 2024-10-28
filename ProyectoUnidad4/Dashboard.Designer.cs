@@ -35,9 +35,9 @@
             this.btnCerrarSesion = new Guna.UI2.WinForms.Guna2Button();
             this.btnPaginaPrincipal = new Guna.UI2.WinForms.Guna2Button();
             this.pnlMoradoOcuroArriba = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.picBtnCarrito = new Guna.UI2.WinForms.Guna2PictureBox();
             this.picÑemu = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pnlMoradoOcuroArriba.SuspendLayout();
@@ -59,7 +59,7 @@
             this.btnGestionDeProductos.Location = new System.Drawing.Point(223, 165);
             this.btnGestionDeProductos.Margin = new System.Windows.Forms.Padding(4);
             this.btnGestionDeProductos.Name = "btnGestionDeProductos";
-            this.btnGestionDeProductos.Size = new System.Drawing.Size(160, 50);
+            this.btnGestionDeProductos.Size = new System.Drawing.Size(160, 66);
             this.btnGestionDeProductos.TabIndex = 0;
             this.btnGestionDeProductos.Text = "Gestión de productos";
             this.btnGestionDeProductos.Click += new System.EventHandler(this.btnGestionDeProductos_Click);
@@ -74,10 +74,10 @@
             this.btnGestionDeClientes.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(55)))), ((int)(((byte)(166)))));
             this.btnGestionDeClientes.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.btnGestionDeClientes.ForeColor = System.Drawing.Color.White;
-            this.btnGestionDeClientes.Location = new System.Drawing.Point(223, 234);
+            this.btnGestionDeClientes.Location = new System.Drawing.Point(223, 239);
             this.btnGestionDeClientes.Margin = new System.Windows.Forms.Padding(4);
             this.btnGestionDeClientes.Name = "btnGestionDeClientes";
-            this.btnGestionDeClientes.Size = new System.Drawing.Size(160, 50);
+            this.btnGestionDeClientes.Size = new System.Drawing.Size(160, 66);
             this.btnGestionDeClientes.TabIndex = 1;
             this.btnGestionDeClientes.Text = "Gestión de clientes";
             this.btnGestionDeClientes.Click += new System.EventHandler(this.btnGestionDeClientes_Click);
@@ -92,10 +92,10 @@
             this.btnReportes.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(55)))), ((int)(((byte)(166)))));
             this.btnReportes.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.btnReportes.ForeColor = System.Drawing.Color.White;
-            this.btnReportes.Location = new System.Drawing.Point(223, 303);
+            this.btnReportes.Location = new System.Drawing.Point(223, 313);
             this.btnReportes.Margin = new System.Windows.Forms.Padding(4);
             this.btnReportes.Name = "btnReportes";
-            this.btnReportes.Size = new System.Drawing.Size(160, 50);
+            this.btnReportes.Size = new System.Drawing.Size(160, 66);
             this.btnReportes.TabIndex = 2;
             this.btnReportes.Text = "Reportes";
             this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click);
@@ -110,10 +110,10 @@
             this.btnCerrarSesion.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(55)))), ((int)(((byte)(166)))));
             this.btnCerrarSesion.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.btnCerrarSesion.ForeColor = System.Drawing.Color.White;
-            this.btnCerrarSesion.Location = new System.Drawing.Point(223, 446);
+            this.btnCerrarSesion.Location = new System.Drawing.Point(223, 461);
             this.btnCerrarSesion.Margin = new System.Windows.Forms.Padding(4);
             this.btnCerrarSesion.Name = "btnCerrarSesion";
-            this.btnCerrarSesion.Size = new System.Drawing.Size(160, 50);
+            this.btnCerrarSesion.Size = new System.Drawing.Size(160, 66);
             this.btnCerrarSesion.TabIndex = 4;
             this.btnCerrarSesion.Text = "Cerrar sesión";
             this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
@@ -128,10 +128,10 @@
             this.btnPaginaPrincipal.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(55)))), ((int)(((byte)(166)))));
             this.btnPaginaPrincipal.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.btnPaginaPrincipal.ForeColor = System.Drawing.Color.White;
-            this.btnPaginaPrincipal.Location = new System.Drawing.Point(223, 376);
+            this.btnPaginaPrincipal.Location = new System.Drawing.Point(223, 387);
             this.btnPaginaPrincipal.Margin = new System.Windows.Forms.Padding(4);
             this.btnPaginaPrincipal.Name = "btnPaginaPrincipal";
-            this.btnPaginaPrincipal.Size = new System.Drawing.Size(160, 50);
+            this.btnPaginaPrincipal.Size = new System.Drawing.Size(160, 66);
             this.btnPaginaPrincipal.TabIndex = 5;
             this.btnPaginaPrincipal.Text = "Principal";
             this.btnPaginaPrincipal.Click += new System.EventHandler(this.btnPaginaPrincipal_Click);
@@ -149,6 +149,17 @@
             this.pnlMoradoOcuroArriba.Name = "pnlMoradoOcuroArriba";
             this.pnlMoradoOcuroArriba.Size = new System.Drawing.Size(589, 122);
             this.pnlMoradoOcuroArriba.TabIndex = 18;
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Image = global::ProyectoUnidad4.Properties.Resources.Dashboard;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(154, 3);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(330, 102);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 18;
+            this.guna2PictureBox1.TabStop = false;
             // 
             // guna2ControlBox2
             // 
@@ -171,17 +182,6 @@
             this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
             this.guna2ControlBox1.TabIndex = 1;
             this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click);
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Image = global::ProyectoUnidad4.Properties.Resources.Dashboard;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(154, 3);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(330, 102);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 18;
-            this.guna2PictureBox1.TabStop = false;
             // 
             // picBtnCarrito
             // 

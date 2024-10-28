@@ -286,5 +286,10 @@ namespace ProyectoUnidad4
                 MessageBox.Show("No se pudo agregar el producto al carrito. Verifica los datos.");
             }
         }
+
+        private void pnlFondoGeneral_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

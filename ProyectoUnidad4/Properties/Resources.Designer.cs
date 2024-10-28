@@ -323,6 +323,16 @@ namespace ProyectoUnidad4.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ReportesImagen {
+            get {
+                object obj = ResourceManager.GetObject("ReportesImagen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap tgestion {
             get {
                 object obj = ResourceManager.GetObject("tgestion", resourceCulture);

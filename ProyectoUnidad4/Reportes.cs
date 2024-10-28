@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,11 +18,10 @@ namespace ProyectoUnidad4
             InitializeComponent();
             ConfigurarTablaInventario();
             ConfigurarTablaVentas();
+            ConfigurarTablaClientes();
             CargarTablaVentas();
             CargarTablaInventario();
-            // Agregar columnas a los DataGridView
-            dgvInventarioo.Columns.Add("Prueba2", "Prueba2");
-            dgvClientes.Columns.Add("Prueba3", "Prueba3");
+            CargartablaClientes();
 
             // Asignar eventos CheckedChanged a los RadioButtons
             rdbVentas.CheckedChanged += new EventHandler(RadioButton_CheckedChanged);
@@ -32,6 +32,24 @@ namespace ProyectoUnidad4
             pnlVentas.Visible = false;
             pnlInventarioo.Visible = false;
             pnlClientes.Visible = false;
+
+            dgvClientes.RowHeadersVisible = false; // Eliminar primera columna vacía
+            dgvClientes.AllowUserToAddRows = false;
+            dgvClientes.AllowUserToResizeColumns = false;
+            dgvClientes.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgvClientes.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+            dgvInventarioo.RowHeadersVisible = false; // Eliminar primera columna vacía
+            dgvInventarioo.AllowUserToAddRows = false;
+            dgvInventarioo.AllowUserToResizeColumns = false;
+            dgvInventarioo.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgvInventarioo.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+            dgvVentas.RowHeadersVisible = false; // Eliminar primera columna vacía
+            dgvVentas.AllowUserToAddRows = false;
+            dgvVentas.AllowUserToResizeColumns = false;
+            dgvVentas.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgvVentas.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
         }
 
         public void CargarTablaVentas()
@@ -65,7 +83,21 @@ namespace ProyectoUnidad4
                     );
             }
         }
-
+        private static string archivoUsuarios = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "usuarios.txt");
+        private void CargartablaClientes()
+        {
+            //verifica si existe el archivo
+            if (File.Exists(archivoUsuarios))
+            {
+                var lineas = File.ReadAllLines(archivoUsuarios);
+                foreach (var linea in lineas)
+                {   //lee las lineas del txt y checa los elemtos que estan separados por ,
+                    var datos = linea.Split(',');
+                    dgvClientes.Rows.Add(datos[0], datos[1]);
+                    
+                }
+            }
+        }
         private void ConfigurarTablaVentas()
         {
             //agregar imagen a la columna
@@ -81,6 +113,14 @@ namespace ProyectoUnidad4
             dgvVentas.Columns.Add("Precio", "Precio");
             dgvVentas.Columns.Add("Cantidad", "Cantidad");
         }
+        private void ConfigurarTablaClientes()
+        {
+            //agregar columnas a dgvProductos
+            dgvClientes.Columns.Add("Usuario", "Usuario");
+            dgvClientes.Columns.Add("Correo", "Correo");
+
+        }
+
         private void ConfigurarTablaInventario()
         {
             //agregar imagen a la columna
