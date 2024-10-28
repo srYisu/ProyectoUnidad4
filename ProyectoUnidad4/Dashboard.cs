@@ -49,5 +49,12 @@ namespace ProyectoUnidad4
             principal.Show();
             
         }
+
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
+        {
+            Form1 f1 = new Form1();
+            f1.Show();
+            this.Close();
+        }
     }
 }

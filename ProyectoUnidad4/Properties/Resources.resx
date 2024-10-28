@@ -118,29 +118,29 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="carritoDeCompras (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\carritoDeCompras (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Dashboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dashboard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="carritoFlechaFondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\carritoFlechaFondo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ConfirmarPago" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ConfirmarPago.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="comprasCarritoLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\comprasCarritoLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="tgestion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tgestion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flecha-del-carrito-hacia-abajo (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flecha-del-carrito-hacia-abajo (5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carritoFlecha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\carritoFlecha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carritoDeCompras (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\carritoDeCompras (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="alt-administrador" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\alt-administrador.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ÑemuFinal (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ÑemuFinal (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="usuarioInicio (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\usuarioInicio (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Ñamason (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ñamason (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ÑemuFinal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ÑemuFinal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="DiaMuertos (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DiaMuertos (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ÑemuFinal (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ÑemuFinal (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,43 +148,58 @@
   <data name="carritoDeCompras" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\carritoDeCompras.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="carrito-de-compras (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\carrito-de-compras (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Ñemu" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ñemu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="carritoFlecha" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\carritoFlecha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="lupaBuscar (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lupaBuscar (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="circulo-de-usuario (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\circulo-de-usuario (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="carritoDeCompras (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\carritoDeCompras (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="flecha-del-carrito-hacia-abajo (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\flecha-del-carrito-hacia-abajo (5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ConfirmarPago (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ConfirmarPago (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Ñamason (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ñamason (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DiaMuertos (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DiaMuertos (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="usuarioInicio (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\usuarioInicio (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Ñamason" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ñamason.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="lupaBuscar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lupaBuscar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="carritoFlechaFondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\carritoFlechaFondo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="DiaMuertos (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DiaMuertos (4).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tgestion" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tgestion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ÑemuFinal (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ÑemuFinal (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ñemu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ñemu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carrito-de-compras (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\carrito-de-compras (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="comprasCarritoLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\comprasCarritoLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ñamason (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ñamason (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lupaBuscar (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lupaBuscar (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carritoDeCompras (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\carritoDeCompras (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ñamason" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ñamason.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ÑemuFinal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ÑemuFinal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lupaBuscar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lupaBuscar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CuentaImagen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CuentaImagen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ConfirmarImagen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ConfirmarImagen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

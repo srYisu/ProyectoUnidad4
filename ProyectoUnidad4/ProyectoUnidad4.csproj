@@ -251,6 +251,11 @@
   <ItemGroup>
     <None Include="Resources\comprasCarritoLogo.png" />
     <None Include="Resources\tgestion.png" />
+    <None Include="Resources\ConfirmarPago.png" />
+    <None Include="Resources\ConfirmarPago %281%29.png" />
+    <None Include="Resources\Dashboard.png" />
+    <None Include="Resources\CuentaImagen.png" />
+    <None Include="Resources\ConfirmarImagen.png" />
     <Content Include="usuariosAca\Ususarioss.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
