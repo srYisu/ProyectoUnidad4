@@ -61,7 +61,7 @@
             this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(31)))), ((int)(((byte)(162)))));
             this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(39)))), ((int)(((byte)(176)))));
             this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2CustomGradientPanel1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2CustomGradientPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(407, 615);
             this.guna2CustomGradientPanel1.TabIndex = 0;
@@ -96,13 +96,12 @@
             // lblCrearCuenta
             // 
             this.lblCrearCuenta.BackColor = System.Drawing.Color.Transparent;
-            this.lblCrearCuenta.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCrearCuenta.Location = new System.Drawing.Point(85, 284);
-            this.lblCrearCuenta.Margin = new System.Windows.Forms.Padding(2);
+            this.lblCrearCuenta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lblCrearCuenta.Name = "lblCrearCuenta";
-            this.lblCrearCuenta.Size = new System.Drawing.Size(77, 19);
+            this.lblCrearCuenta.Size = new System.Drawing.Size(82, 15);
             this.lblCrearCuenta.TabIndex = 4;
-            this.lblCrearCuenta.Text = "<u> Crear cuenta <u>";
+            this.lblCrearCuenta.Text = "<u> Cree una cuenta <u>";
             this.lblCrearCuenta.Click += new System.EventHandler(this.lblCrearCuenta_Click);
             // 
             // tgsMostrarContraseña1
@@ -120,7 +119,7 @@
             this.tgsMostrarContraseña1.CheckedState.InnerColor = System.Drawing.Color.White;
             this.tgsMostrarContraseña1.Cursor = System.Windows.Forms.Cursors.Default;
             this.tgsMostrarContraseña1.Location = new System.Drawing.Point(158, 144);
-            this.tgsMostrarContraseña1.Margin = new System.Windows.Forms.Padding(2);
+            this.tgsMostrarContraseña1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tgsMostrarContraseña1.Name = "tgsMostrarContraseña1";
             this.tgsMostrarContraseña1.Size = new System.Drawing.Size(52, 24);
             this.tgsMostrarContraseña1.TabIndex = 3;
@@ -150,7 +149,7 @@
             this.btnInciarSesionReal.ForeColor = System.Drawing.Color.White;
             this.btnInciarSesionReal.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.btnInciarSesionReal.Location = new System.Drawing.Point(61, 210);
-            this.btnInciarSesionReal.Margin = new System.Windows.Forms.Padding(2);
+            this.btnInciarSesionReal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnInciarSesionReal.Name = "btnInciarSesionReal";
             this.btnInciarSesionReal.Size = new System.Drawing.Size(135, 48);
             this.btnInciarSesionReal.TabIndex = 2;
@@ -236,7 +235,7 @@
             this.guna2PictureBox1.Image = global::ProyectoUnidad4.Properties.Resources.usuarioInicio__1_;
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(114, 22);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(184, 162);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -350,7 +349,7 @@
             this.ClientSize = new System.Drawing.Size(407, 615);
             this.Controls.Add(this.guna2CustomGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
