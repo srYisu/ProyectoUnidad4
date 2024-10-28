@@ -258,5 +258,6 @@
     <None Include="Resources\ConfirmarImagen.png" />
     <Content Include="usuariosAca\Ususarioss.txt" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
